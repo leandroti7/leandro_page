@@ -1,12 +1,88 @@
 section.sobre
+	background: $bg_cinza_ligth
 	position: relative
 	.chamada
+		height: 130px
 		text-align: center
 		background: $bg_ligth_cinza
-		/*span
-			background: $bg_cinza
-			+make-md-column(2)
-			+make-md-column-offset(1)
+
+		.sp-left
+			top: 50%
+			height: 4px
+			background: $azul-escuro
+			+make-sm-column(2)
+			+make-sm-column-offset(1)
+
+		.sp-center
+			+font-size(65px)
+			text-transform: uppercase
+			letter-spacing: 5px
+			line-height: 120px
+			height: 2px
+			+make-sm-column(2)
+			+make-sm-column-offset(2)
+
+		.sp-rigth
+			top: 50% 
+			line-height: 150px
+			height: 4px
+			background: $azul-escuro		
+			+make-sm-column(2)
+			+make-sm-column-offset(9)
 
 
-*/
+	.itens
+		clear: both	
+		background: $bg_verde_ligth
+		+flexbox
+		margin: 65px auto
+		text-align: center
+
+
+		[class^="topicos-"]
+			+make-sm-column(3)
+			border: 1px solid #000 
+			margin: 10px
+			+font-size(20px)
+
+			h1
+				color: $cinza-escuro
+				font-weight: $semi-bold
+				margin: 10px 0
+				background: $bg_ligth_cinza
+
+	.textos
+		text-align: center
+		+flexbox
+		+make-sm-column(12)
+		+font-size(25px)
+	
+
+
+		.p1,.p2
+			//border: 1px solid #000 
+			margin: 5px
+			padding: 5px
+
+
+			strong
+				color: $azul
+				font-weight: $semi-bold
+
+			span
+				text-decoration: underline
+				color: $azul	
+				font-weight: $semi-bold
+
+			h1
+				+font-size(30px)
+				color: $cinza-escuro
+				margin-bottom: 30px
+
+
+
+
+
+
+
+		

@@ -128,20 +128,118 @@ header {
         border-bottom: 3px solid #072c61; }
 
 section.sobre {
+  background: #f5f5f5;
   position: relative; }
   section.sobre .chamada {
+    height: 130px;
     text-align: center;
     background: #a3adbc; }
-    section.sobre .chamada span {
-      background: #737c8a;
+    section.sobre .chamada .sp-left {
+      top: 50%;
+      height: 4px;
+      background: #072c61;
       position: relative;
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px; }
-      @media (min-width: 992px) {
-        section.sobre .chamada span {
+      @media (min-width: 768px) {
+        section.sobre .chamada .sp-left {
           float: left;
           width: 16.66667%; } }
-      @media (min-width: 992px) {
-        section.sobre .chamada span {
+      @media (min-width: 768px) {
+        section.sobre .chamada .sp-left {
           margin-left: 8.33333%; } }
+    section.sobre .chamada .sp-center {
+      font-size: 65px;
+      font-size: 4.0625rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      line-height: 120px;
+      height: 2px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        section.sobre .chamada .sp-center {
+          float: left;
+          width: 16.66667%; } }
+      @media (min-width: 768px) {
+        section.sobre .chamada .sp-center {
+          margin-left: 16.66667%; } }
+    section.sobre .chamada .sp-rigth {
+      top: 50%;
+      line-height: 150px;
+      height: 4px;
+      background: #072c61;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        section.sobre .chamada .sp-rigth {
+          float: left;
+          width: 16.66667%; } }
+      @media (min-width: 768px) {
+        section.sobre .chamada .sp-rigth {
+          margin-left: 75%; } }
+  section.sobre .itens {
+    clear: both;
+    background: #81e08a;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 65px auto;
+    text-align: center; }
+    section.sobre .itens [class^="topicos-"] {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: 1px solid #000;
+      margin: 10px;
+      font-size: 20px;
+      font-size: 1.25rem; }
+      @media (min-width: 768px) {
+        section.sobre .itens [class^="topicos-"] {
+          float: left;
+          width: 25%; } }
+      section.sobre .itens [class^="topicos-"] h1 {
+        color: #666666;
+        font-weight: 600;
+        margin: 10px 0;
+        background: #a3adbc; }
+  section.sobre .textos {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+    font-size: 1.5625rem; }
+    @media (min-width: 768px) {
+      section.sobre .textos {
+        float: left;
+        width: 100%; } }
+    section.sobre .textos .p1, section.sobre .textos .p2 {
+      margin: 5px;
+      padding: 5px; }
+      section.sobre .textos .p1 strong, section.sobre .textos .p2 strong {
+        color: #0072bc;
+        font-weight: 600; }
+      section.sobre .textos .p1 span, section.sobre .textos .p2 span {
+        text-decoration: underline;
+        color: #0072bc;
+        font-weight: 600; }
+      section.sobre .textos .p1 h1, section.sobre .textos .p2 h1 {
+        font-size: 30px;
+        font-size: 1.875rem;
+        color: #666666;
+        margin-bottom: 30px; }
