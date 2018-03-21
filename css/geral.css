@@ -1,0 +1,147 @@
+/* ======== Cores */
+/* ======== Font */
+/* ======== Outros */
+/* ======== Background Color Opacity */
+/* ======== Columns */
+/* ======== Cores */
+/* ======== Font */
+/* ======== Outros */
+/* ======== Background Color Opacity */
+/* ======== Columns */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  font-weight: 400; }
+  body strong {
+    font-weight: 700; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+  a:hover, a:focus {
+    text-decoration: none !important;
+    color: #0072bc; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  position: relative;
+  background-image: url("../galeria/fundo1.png");
+  background-repeat: no-repeat;
+  background-attachament: fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 25, 0.7); }
+  header:before, header:after {
+    content: " ";
+    display: table; }
+  header:after {
+    clear: both; }
+  header .container {
+    width: 100%;
+    position: relative;
+    float: left;
+    background: #fff; }
+    header .container .logo {
+      color: #3d8af7;
+      display: block;
+      float: left;
+      margin: 10px 0;
+      padding: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 24px;
+      font-size: 1.5rem; }
+    header .container .menu {
+      float: right;
+      margin: 10px; }
+      header .container .menu ul {
+        display: inline-flex; }
+        header .container .menu ul li {
+          margin: 10px;
+          font-size: 18px;
+          font-size: 1.125rem;
+          text-transform: uppercase;
+          color: #3d8af7;
+          letter-spacing: 2px; }
+  header .chamada {
+    text-align: center;
+    color: #072c61;
+    margin: 180px 0; }
+    header .chamada .my-foto {
+      clear: both;
+      border-radius: 50%;
+      border: 10px solid white;
+      margin-bottom: 10px;
+      width: 250px;
+      height: 250px;
+      background-position: center; }
+      header .chamada .my-foto:hover {
+        border-color: rgba(200, 255, 255, 0.7); }
+    header .chamada h3 {
+      font-weight: 400;
+      font-size: 28px;
+      font-size: 1.75rem;
+      margin: 10px 0 170px 0; }
+    header .chamada p {
+      font-size: 50px;
+      font-size: 3.125rem;
+      font-weight: 600;
+      margin-bottom: 30px; }
+      header .chamada p .first {
+        color: #fff;
+        padding: 0 2px;
+        background: #0072bc; }
+      header .chamada p .second {
+        border-bottom: 3px solid #072c61; }
+
+section.sobre {
+  position: relative; }
+  section.sobre .chamada {
+    text-align: center;
+    background: #a3adbc; }
+    section.sobre .chamada span {
+      background: #737c8a;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 992px) {
+        section.sobre .chamada span {
+          float: left;
+          width: 16.66667%; } }
+      @media (min-width: 992px) {
+        section.sobre .chamada span {
+          margin-left: 8.33333%; } }
