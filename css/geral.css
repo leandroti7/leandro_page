@@ -185,7 +185,6 @@ section.sobre {
           margin-left: 75%; } }
   section.sobre .itens {
     clear: both;
-    background: #81e08a;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -198,10 +197,10 @@ section.sobre {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
-      border: 1px solid #000;
       margin: 10px;
       font-size: 20px;
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      z-index: 1; }
       @media (min-width: 768px) {
         section.sobre .itens [class^="topicos-"] {
           float: left;
@@ -209,8 +208,45 @@ section.sobre {
       section.sobre .itens [class^="topicos-"] h1 {
         color: #666666;
         font-weight: 600;
-        margin: 10px 0;
-        background: #a3adbc; }
+        margin: 10px 0; }
+      section.sobre .itens [class^="topicos-"] [class^="icone-"] {
+        margin: 0px 20px;
+        padding: 0px 0; }
+        section.sobre .itens [class^="topicos-"] [class^="icone-"] i {
+          position: relative;
+          z-index: 3;
+          color: white;
+          font-size: 48px;
+          font-size: 3rem;
+          top: -75px; }
+      section.sobre .itens [class^="topicos-"] .hep {
+        margin: 40px;
+        width: 120px;
+        position: relative;
+        border-bottom: 50px solid #0072bc;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        z-index: 2; }
+        section.sobre .itens [class^="topicos-"] .hep:before {
+          content: "";
+          position: absolute;
+          top: -25px;
+          left: 0px;
+          width: 0px;
+          height: 0px;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 25px solid #0072bc; }
+        section.sobre .itens [class^="topicos-"] .hep:after {
+          content: "";
+          position: absolute;
+          bottom: -130px;
+          left: -10px;
+          width: 120px;
+          height: 0;
+          border-width: 40px 30px;
+          border-style: solid;
+          border-color: #0072bc transparent transparent; }
   section.sobre .textos {
     text-align: center;
     display: -webkit-box;

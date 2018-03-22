@@ -33,7 +33,7 @@ section.sobre
 
 	.itens
 		clear: both	
-		background: $bg_verde_ligth
+		//background: $bg_verde_ligth
 		+flexbox
 		margin: 65px auto
 		text-align: center
@@ -41,15 +41,69 @@ section.sobre
 
 		[class^="topicos-"]
 			+make-sm-column(3)
-			border: 1px solid #000 
+			//border: 1px solid #000 
 			margin: 10px
 			+font-size(20px)
+			z-index: 1
 
 			h1
 				color: $cinza-escuro
 				font-weight: $semi-bold
 				margin: 10px 0
-				background: $bg_ligth_cinza
+				
+				//background: $bg_ligth_cinza
+
+
+			[class^="icone-"]
+					margin: 0px 20px
+					//background: $azul
+					padding: 0px 0
+
+
+					i
+						position: relative
+						z-index: 3
+						color: $branco
+						+font-size(48px)
+						top: -75px
+						//background: $bg_ligth_cinza
+
+
+
+			.hep
+				margin: 40px
+				width: 120px
+				position: relative
+				border-bottom: 50px solid $azul
+				border-left: 10px solid transparent
+				border-right: 10px solid transparent
+				z-index: 2
+
+				&:before
+					content: ""
+					position: absolute
+					top: -25px
+					left: 0px
+					width: 0px
+					height: 0px
+					border-left: 50px solid transparent
+					border-right: 50px solid transparent
+					border-bottom: 25px solid $azul
+					
+				
+
+				&:after
+					content: ""
+					position: absolute
+					bottom: -130px
+					left: -10px
+					width: 120px
+					height: 0
+					border-width: 40px 30px
+					border-style: solid
+					border-color: $azul transparent transparent
+					
+
 
 	.textos
 		text-align: center
@@ -63,7 +117,7 @@ section.sobre
 			//border: 1px solid #000 
 			margin: 5px
 			padding: 5px
-
+			
 
 			strong
 				color: $azul
@@ -78,6 +132,7 @@ section.sobre
 				+font-size(30px)
 				color: $cinza-escuro
 				margin-bottom: 30px
+
 
 
 
