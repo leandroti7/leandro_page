@@ -57,132 +57,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-header {
-  position: relative;
-  background-image: url("../galeria/fundo1.png");
-  background-repeat: no-repeat;
-  background-attachament: fixed;
-  background-size: cover;
-  background-color: rgba(255, 255, 25, 0.7); }
-  header:before, header:after {
-    content: " ";
-    display: table; }
-  header:after {
-    clear: both; }
-  header .container {
-    width: 100%;
-    position: relative;
-    float: left;
-    background: #fff; }
-    header .container .logo {
-      color: #3d8af7;
-      display: block;
-      float: left;
-      margin: 10px 0;
-      padding: 5px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 24px;
-      font-size: 1.5rem; }
-    header .container .menu {
-      float: right;
-      margin: 10px; }
-      header .container .menu ul {
-        display: inline-flex; }
-        header .container .menu ul li {
-          margin: 10px;
-          font-size: 18px;
-          font-size: 1.125rem;
-          text-transform: uppercase;
-          color: #3d8af7;
-          letter-spacing: 2px; }
-  header .chamada {
-    text-align: center;
-    color: #072c61;
-    margin: 180px 0; }
-    header .chamada .my-foto {
-      clear: both;
-      border-radius: 50%;
-      border: 10px solid white;
-      margin-bottom: 10px;
-      width: 250px;
-      height: 250px;
-      background-position: center; }
-      header .chamada .my-foto:hover {
-        border-color: rgba(200, 255, 255, 0.7); }
-    header .chamada h3 {
-      font-weight: 400;
-      font-size: 28px;
-      font-size: 1.75rem;
-      margin: 10px 0 170px 0; }
-    header .chamada p {
-      font-size: 50px;
-      font-size: 3.125rem;
-      font-weight: 600;
-      margin-bottom: 30px; }
-      header .chamada p .first {
-        color: #fff;
-        padding: 0 2px;
-        background: #0072bc; }
-      header .chamada p .second {
-        border-bottom: 3px solid #072c61; }
-
 section.sobre {
   background: #f5f5f5;
   position: relative; }
-  section.sobre .chamada {
-    height: 130px;
-    text-align: center;
-    background: #a3adbc; }
-    section.sobre .chamada .sp-left {
-      top: 50%;
-      height: 4px;
-      background: #072c61;
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px; }
-      @media (min-width: 768px) {
-        section.sobre .chamada .sp-left {
-          float: left;
-          width: 16.66667%; } }
-      @media (min-width: 768px) {
-        section.sobre .chamada .sp-left {
-          margin-left: 8.33333%; } }
-    section.sobre .chamada .sp-center {
-      font-size: 65px;
-      font-size: 4.0625rem;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      line-height: 120px;
-      height: 2px;
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px; }
-      @media (min-width: 768px) {
-        section.sobre .chamada .sp-center {
-          float: left;
-          width: 16.66667%; } }
-      @media (min-width: 768px) {
-        section.sobre .chamada .sp-center {
-          margin-left: 16.66667%; } }
-    section.sobre .chamada .sp-rigth {
-      top: 50%;
-      line-height: 150px;
-      height: 4px;
-      background: #072c61;
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px; }
-      @media (min-width: 768px) {
-        section.sobre .chamada .sp-rigth {
-          float: left;
-          width: 16.66667%; } }
-      @media (min-width: 768px) {
-        section.sobre .chamada .sp-rigth {
-          margin-left: 75%; } }
   section.sobre .itens {
     clear: both;
     display: -webkit-box;
@@ -279,3 +156,125 @@ section.sobre {
         font-size: 1.875rem;
         color: #666666;
         margin-bottom: 30px; }
+
+header {
+  position: relative;
+  background-image: url("../galeria/fundo1.png");
+  background-repeat: no-repeat;
+  background-attachament: fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 25, 0.7); }
+  header:before, header:after {
+    content: " ";
+    display: table; }
+  header:after {
+    clear: both; }
+  header .container {
+    width: 100%;
+    position: relative;
+    float: left;
+    background: #fff; }
+    header .container .logo {
+      color: #3d8af7;
+      display: block;
+      float: left;
+      margin: 10px 0;
+      padding: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 24px;
+      font-size: 1.5rem; }
+    header .container .menu {
+      float: right;
+      margin: 10px; }
+      header .container .menu ul {
+        display: inline-flex; }
+        header .container .menu ul li {
+          margin: 10px;
+          font-size: 18px;
+          font-size: 1.125rem;
+          text-transform: uppercase;
+          color: #3d8af7;
+          letter-spacing: 2px; }
+  header .chamada {
+    text-align: center;
+    color: #072c61;
+    margin: 180px 0; }
+    header .chamada .my-foto {
+      clear: both;
+      border-radius: 50%;
+      border: 10px solid white;
+      margin-bottom: 10px;
+      width: 250px;
+      height: 250px;
+      background-position: center; }
+      header .chamada .my-foto:hover {
+        border-color: rgba(200, 255, 255, 0.7); }
+    header .chamada h3 {
+      font-weight: 400;
+      font-size: 28px;
+      font-size: 1.75rem;
+      margin: 10px 0 170px 0; }
+    header .chamada p {
+      font-size: 50px;
+      font-size: 3.125rem;
+      font-weight: 600;
+      margin-bottom: 30px; }
+      header .chamada p .first {
+        color: #fff;
+        padding: 0 2px;
+        background: #0072bc; }
+      header .chamada p .second {
+        border-bottom: 3px solid #072c61; }
+
+.chamada_section {
+  height: 130px; }
+  .chamada_section .sp-left {
+    top: 50%;
+    height: 2px;
+    background: #072c61;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .chamada_section .sp-left {
+        float: left;
+        width: 16.66667%; } }
+    @media (min-width: 768px) {
+      .chamada_section .sp-left {
+        margin-left: 8.33333%; } }
+  .chamada_section .sp-center {
+    font-size: 60px;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 120px;
+    height: 2px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .chamada_section .sp-center {
+        float: left;
+        width: 16.66667%; } }
+    @media (min-width: 768px) {
+      .chamada_section .sp-center {
+        margin-left: 12.5%; } }
+  .chamada_section .sp-rigth {
+    top: 50%;
+    line-height: 150px;
+    height: 2px;
+    background: #072c61;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .chamada_section .sp-rigth {
+        float: left;
+        width: 16.66667%; } }
+    @media (min-width: 768px) {
+      .chamada_section .sp-rigth {
+        margin-left: 75%; } }
