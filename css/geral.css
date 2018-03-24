@@ -74,20 +74,22 @@ section.sobre {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
+      border: 1px solid #000;
       margin: 10px;
       font-size: 20px;
       font-size: 1.25rem;
       z-index: 1; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         section.sobre .itens [class^="topicos-"] {
           float: left;
           width: 25%; } }
       section.sobre .itens [class^="topicos-"] h1 {
-        color: #666666;
+        color: #969696;
         font-weight: 600;
         margin: 10px 0; }
       section.sobre .itens [class^="topicos-"] [class^="icone-"] {
         margin: 0px 20px;
+        background: #3d8af7;
         padding: 0px 0; }
         section.sobre .itens [class^="topicos-"] [class^="icone-"] i {
           position: relative;
@@ -137,13 +139,14 @@ section.sobre {
     padding-right: 15px;
     font-size: 25px;
     font-size: 1.5625rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       section.sobre .textos {
         float: left;
         width: 100%; } }
     section.sobre .textos .p1, section.sobre .textos .p2 {
       margin: 5px;
-      padding: 5px; }
+      padding: 5px;
+      color: #969696; }
       section.sobre .textos .p1 strong, section.sobre .textos .p2 strong {
         color: #0072bc;
         font-weight: 600; }
@@ -154,8 +157,58 @@ section.sobre {
       section.sobre .textos .p1 h1, section.sobre .textos .p2 h1 {
         font-size: 30px;
         font-size: 1.875rem;
-        color: #666666;
         margin-bottom: 30px; }
+
+section.habilidades h1 {
+  font-size: 45px;
+  font-size: 2.8125rem;
+  color: #969696; }
+
+section.habilidades .icon-habilidades {
+  margin: 20px 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 1200px) {
+    section.habilidades .icon-habilidades {
+      float: left;
+      width: 83.33333%; } }
+  section.habilidades .icon-habilidades [class^="icone-"] {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 140px;
+    font-size: 8.75rem; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-html {
+      color: #f48d08; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-css {
+      color: #393df5; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-sass {
+      color: #c50cd1; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-bootstrap {
+      color: #670798; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-js {
+      color: #d3a60a; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-node {
+      color: #72ba72; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-gulp {
+      color: #fb0320; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-bower {
+      color: #f48d08; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-github {
+      color: #000; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-photoshop {
+      color: #1820bb; }
+    section.habilidades .icon-habilidades [class^="icone-"].icone-wordpress {
+      color: #737c8a; }
+    section.habilidades .icon-habilidades [class^="icone-"] h3 {
+      color: #000;
+      font-size: 20px;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      margin-top: 20px; }
 
 header {
   position: relative;
@@ -228,7 +281,9 @@ header {
         border-bottom: 3px solid #072c61; }
 
 .chamada_section {
-  height: 130px; }
+  height: 130px;
+  background: #a3adbc;
+  clear: both; }
   .chamada_section .sp-left {
     top: 50%;
     height: 2px;
@@ -237,11 +292,11 @@ header {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .chamada_section .sp-left {
         float: left;
         width: 16.66667%; } }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .chamada_section .sp-left {
         margin-left: 8.33333%; } }
   .chamada_section .sp-center {
@@ -255,11 +310,11 @@ header {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .chamada_section .sp-center {
         float: left;
         width: 16.66667%; } }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .chamada_section .sp-center {
         margin-left: 12.5%; } }
   .chamada_section .sp-rigth {
@@ -271,10 +326,39 @@ header {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .chamada_section .sp-rigth {
         float: left;
         width: 16.66667%; } }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .chamada_section .sp-rigth {
         margin-left: 75%; } }
+
+.box {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  margin: 30px 50px;
+  padding: 20px 0;
+  box-shadow: 2px 3px 10px 2px #d8d8d8; }
+  @media (min-width: 1200px) {
+    .box {
+      float: left;
+      width: 83.33333%; } }
+  @media (min-width: 1200px) {
+    .box {
+      margin-left: 8.33333%; } }
+  .box .line {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px 0;
+    border: 0.5px solid #d8d8d8;
+    box-shadow: 2px 2px 10px 4px #d8d8d8; }
+    @media (min-width: 1200px) {
+      .box .line {
+        float: left;
+        width: 100%; } }
