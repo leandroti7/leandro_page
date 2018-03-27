@@ -160,9 +160,12 @@ section.sobre {
         margin-bottom: 30px; }
 
 section.habilidades h1 {
-  font-size: 45px;
-  font-size: 2.8125rem;
+  font-size: 30px;
+  font-size: 1.875rem;
   color: #969696; }
+  @media (min-width: 1200px) {
+    section.habilidades h1 {
+      margin-left: 4.16667%; } }
 
 section.habilidades .icon-habilidades {
   margin: 20px 0;
@@ -174,13 +177,16 @@ section.habilidades .icon-habilidades {
     section.habilidades .icon-habilidades {
       float: left;
       width: 83.33333%; } }
+  @media (min-width: 1200px) {
+    section.habilidades .icon-habilidades {
+      margin-left: 4.16667%; } }
   section.habilidades .icon-habilidades [class^="icone-"] {
     display: inline-block;
     margin-right: 40px;
     padding: 0 10px;
     text-align: center;
-    font-size: 140px;
-    font-size: 8.75rem; }
+    font-size: 100px;
+    font-size: 6.25rem; }
     section.habilidades .icon-habilidades [class^="icone-"].icone-html {
       color: #f48d08; }
     section.habilidades .icon-habilidades [class^="icone-"].icone-css {
@@ -205,10 +211,44 @@ section.habilidades .icon-habilidades {
       color: #737c8a; }
     section.habilidades .icon-habilidades [class^="icone-"] h3 {
       color: #000;
-      font-size: 20px;
-      font-size: 1.25rem;
+      font-size: 18px;
+      font-size: 1.125rem;
       text-transform: uppercase;
       margin-top: 20px; }
+
+section.portfolio {
+  background-color: #f5f5f5; }
+  section.portfolio .descricao {
+    text-align: center;
+    font-size: 30px;
+    font-size: 1.875rem;
+    margin: 60px 0;
+    color: #969696; }
+    section.portfolio .descricao strong {
+      color: #0072bc; }
+  section.portfolio .print-job {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px 15px 10px;
+    background: white; }
+    @media (min-width: 1200px) {
+      section.portfolio .print-job {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 1200px) {
+      section.portfolio .print-job {
+        margin-left: 4.16667%; } }
+    section.portfolio .print-job h1 {
+      font-size: 18px;
+      font-size: 1.125rem;
+      margin: 15px 0;
+      letter-spacing: 2px; }
+    section.portfolio .print-job h3 {
+      font-size: 16px;
+      font-size: 1rem;
+      margin-bottom: 30px; }
 
 header {
   position: relative;
@@ -346,10 +386,7 @@ header {
   @media (min-width: 1200px) {
     .box {
       float: left;
-      width: 83.33333%; } }
-  @media (min-width: 1200px) {
-    .box {
-      margin-left: 8.33333%; } }
+      width: 100%; } }
   .box .line {
     position: relative;
     min-height: 1px;
@@ -361,4 +398,7 @@ header {
     @media (min-width: 1200px) {
       .box .line {
         float: left;
-        width: 100%; } }
+        width: 91.66667%; } }
+    @media (min-width: 1200px) {
+      .box .line {
+        margin-left: 4.16667%; } }
