@@ -208,7 +208,7 @@ section.habilidades .icon-habilidades {
     section.habilidades .icon-habilidades [class^="icone-"].icone-photoshop {
       color: #1820bb; }
     section.habilidades .icon-habilidades [class^="icone-"].icone-wordpress {
-      color: #737c8a; }
+      color: rgba(0, 0, 0, 0.7); }
     section.habilidades .icon-habilidades [class^="icone-"] h3 {
       color: #000;
       font-size: 18px;
@@ -249,6 +249,86 @@ section.portfolio {
       font-size: 16px;
       font-size: 1rem;
       margin-bottom: 30px; }
+
+section.contato .descricao {
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  margin: 60px 0;
+  color: #969696; }
+  section.contato .descricao strong {
+    color: #0072bc;
+    text-decoration: underline; }
+
+section.contato .texto-contato {
+  margin-top: 30px;
+  color: #969696;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 1200px) {
+    section.contato .texto-contato {
+      margin-left: 4.16667%; } }
+  @media (min-width: 1200px) {
+    section.contato .texto-contato {
+      float: left;
+      width: 100%; } }
+  section.contato .texto-contato .p1, section.contato .texto-contato .p2 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin: 20px auto; }
+    @media (min-width: 1200px) {
+      section.contato .texto-contato .p1, section.contato .texto-contato .p2 {
+        float: left;
+        width: 66.66667%; } }
+    section.contato .texto-contato .p1 a, section.contato .texto-contato .p2 a {
+      color: #0072bc;
+      text-decoration: underline; }
+
+section.contato .form {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 80px 0 20px 0; }
+  @media (min-width: 1200px) {
+    section.contato .form {
+      margin-left: 4.16667%; } }
+  @media (min-width: 1200px) {
+    section.contato .form {
+      float: left;
+      width: 100%; } }
+  section.contato .form span,
+  section.contato .form input,
+  section.contato .form .next,
+  section.contato .form .send {
+    float: left; }
+  section.contato .form span {
+    color: #969696;
+    margin-top: 5px; }
+  section.contato .form .campo,
+  section.contato .form .botoes {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px auto; }
+    @media (min-width: 1200px) {
+      section.contato .form .campo,
+      section.contato .form .botoes {
+        float: left;
+        width: 100%; } }
+    section.contato .form .campo input[type="text"],
+    section.contato .form .botoes input[type="text"] {
+      border-color: #969696;
+      border-width: 0px 0px 1px 0px;
+      width: 40%;
+      margin-left: 10px; }
 
 header {
   position: relative;
@@ -319,6 +399,50 @@ header {
         background: #0072bc; }
       header .chamada p .second {
         border-bottom: 3px solid #072c61; }
+
+footer {
+  background-color: #1b242f;
+  height: 450px; }
+  footer .down {
+    content: "";
+    height: 0px;
+    border-top: 150px solid white;
+    border-bottom: 50px solid transparent;
+    border-right: 950px solid transparent;
+    border-left: 950px solid transparent; }
+  footer .social,
+  footer h1 {
+    text-align: center; }
+    footer .social li,
+    footer h1 li {
+      display: inline-block;
+      border: 2px solid #1b586a;
+      border-radius: 50%;
+      margin: 10px 15px 100px;
+      width: 70px;
+      height: 70px; }
+      footer .social li a,
+      footer h1 li a {
+        text-decoration: none; }
+        footer .social li a i,
+        footer h1 li a i {
+          font-size: 28px;
+          font-size: 1.75rem;
+          color: white;
+          margin-top: 20px; }
+  footer h1 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #e1e1e1; }
+    footer h1 span {
+      color: #0072bc;
+      margin-left: 5px; }
+    footer h1 i {
+      color: #0072bc;
+      font-size: 15px;
+      font-size: 0.9375rem; }
 
 .chamada_section {
   height: 130px;
@@ -402,3 +526,23 @@ header {
     @media (min-width: 1200px) {
       .box .line {
         margin-left: 4.16667%; } }
+
+.btn {
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 18px;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  color: #e1e1e1;
+  padding: 10px;
+  margin-right: 25px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7); }
+  .btn i {
+    font-size: 18px;
+    font-size: 1.125rem; }
+
+.next {
+  background-color: #0072bc; }
+
+.send {
+  background-color: #009aff; }
