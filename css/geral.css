@@ -342,22 +342,23 @@ header {
     display: table; }
   header:after {
     clear: both; }
-  header .container {
+  header .barra-header {
     width: 100%;
     position: relative;
     float: left;
     background: #1b242f;
-    position: fixed; }
-    header .container .logo {
+    position: fixed;
+    z-index: 1030; }
+    header .barra-header .logo {
       display: inline-flex;
       height: 100%;
       padding: 5px 10px; }
-      header .container .logo:hover {
+      header .barra-header .logo:hover {
         background-color: rgba(173, 216, 230, 0.4);
         -webkit-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s; }
-      header .container .logo a {
+      header .barra-header .logo a {
         color: #3d8af7;
         display: block;
         float: left;
@@ -367,21 +368,21 @@ header {
         letter-spacing: 2px;
         font-size: 24px;
         font-size: 1.5rem; }
-    header .container .menu {
+    header .barra-header .menu {
       float: right;
       margin: 10px; }
-      header .container .menu ul {
+      header .barra-header .menu ul {
         display: inline-flex; }
-        header .container .menu ul li {
+        header .barra-header .menu ul li {
           margin: 10px;
           font-size: 18px;
           font-size: 1.125rem;
           text-transform: uppercase;
           color: #3d8af7;
           letter-spacing: 2px; }
-          header .container .menu ul li a {
+          header .barra-header .menu ul li a {
             padding-bottom: 20px; }
-            header .container .menu ul li a:hover {
+            header .barra-header .menu ul li a:hover {
               color: #f48d08; }
   header .chamada {
     text-align: center;
