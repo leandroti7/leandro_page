@@ -31,10 +31,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 a {
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear; }
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
   a:hover, a:focus {
     text-decoration: none !important;
     color: #0072bc; }
@@ -346,17 +346,27 @@ header {
     width: 100%;
     position: relative;
     float: left;
-    background: #fff; }
+    background: #1b242f;
+    position: fixed; }
     header .container .logo {
-      color: #3d8af7;
-      display: block;
-      float: left;
-      margin: 10px 0;
-      padding: 5px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 24px;
-      font-size: 1.5rem; }
+      display: inline-flex;
+      height: 100%;
+      padding: 5px 10px; }
+      header .container .logo:hover {
+        background-color: rgba(173, 216, 230, 0.4);
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+      header .container .logo a {
+        color: #3d8af7;
+        display: block;
+        float: left;
+        margin: 10px 0;
+        padding: 5px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 24px;
+        font-size: 1.5rem; }
     header .container .menu {
       float: right;
       margin: 10px; }
@@ -369,6 +379,10 @@ header {
           text-transform: uppercase;
           color: #3d8af7;
           letter-spacing: 2px; }
+          header .container .menu ul li a {
+            padding-bottom: 20px; }
+            header .container .menu ul li a:hover {
+              color: #f48d08; }
   header .chamada {
     text-align: center;
     color: #072c61;

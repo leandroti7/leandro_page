@@ -13,32 +13,56 @@ header
 		width: 100%
 		position: relative
 		float: left
-		background: #fff
+		background: $bg_footer
+		position: fixed
 
 		.logo
-			//background: $bg_ligth_cinza
-			color: $azul-claro
-			display: block
-			float: left
-			margin: 10px 0
-			padding: 5px 
-			text-transform: uppercase
-			letter-spacing: 2px
-			+font-size(24px)
+			display: inline-flex
+			height: 100%
+			padding: 5px 10px 
+
+			&:hover
+				background-color: rgba(173,216,230,0.4);
+				+transition(0.2s)
+
+			a
+				//background: $bg_ligth_cinza
+				color: $azul-claro
+				display: block
+				float: left
+				margin: 10px 0
+				padding: 5px 
+				text-transform: uppercase
+				letter-spacing: 2px
+				+font-size(24px)
+
+
+
+			
+
 
 
 		.menu
 			float: right
 			margin: 10px
 			ul
+	
 				display: inline-flex
 				li
-					//background: $bg_verde_ligth
 					margin: 10px;
 					+font-size(18px)
 					text-transform: uppercase
 					color: $azul-claro
 					letter-spacing: 2px
+
+					a
+						padding-bottom: 20px
+
+						&:hover
+							color: $laranja
+						
+
+
 	.chamada
 		text-align: center
 		color: $azul-escuro	

@@ -51,11 +51,11 @@ $tablet: max-width 991px
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
 
 /* ======== Outros */
-=transition($transition...) 
-  -moz-transition:    all $transition linear
-  -o-transition:      all $transition linear
-  -webkit-transition: all $transition linear
-  transition:         all $transition linear
+=transition($transition) 
+  -moz-transition:    all $transition ease-out
+  -o-transition:      all $transition ease-out
+  -webkit-transition: all $transition ease-out
+  transition:         all $transition ease-out
 
 =border-radius($radius) 
   -webkit-border-radius: $radius
