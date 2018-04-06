@@ -5,20 +5,22 @@
 	<title>Leandro Souza | Desenvolvedor Web</title>
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/geral.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/animatescroll.js"></script>
 </head>
 
 <body>
 	<header>
 		<div class="barra-header">
 			<div class="logo">
-				<a href="index.html"><h1>Leandro Souza</h1></a>
+				<a href="#" onclick="$('body').animatescroll();" ><h1>Leandro Souza</h1></a>
 			</div>
-			<nav class="menu">
+			<nav class="menu" >
 				<ul>
-					<li><a href="#sobre">Sobre</a></li>
-					<li><a href="#habilidades">Habilidades</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contato">Contato</a></li>
+					<li><a href="#" onclick="$('#sobre1').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Sobre</a></li>
+					<li><a href="#" onclick="$('#habilidades').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Habilidades</a></li>
+					<li><a href="#" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Portfolio</a></li>
+					<li><a href="#" onclick="$('#contato').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Contato</a></li>
 				</ul>				
 			</nav>
 		</div>
@@ -30,7 +32,7 @@
 		</div>
 	</header>
 
-	<section class="sobre" id="sobre">
+	<section class="sobre" id="sobre1"  data-anime="top">
 		
 		<div class="chamada_section">
 			<span class="sp-left"></span>
@@ -93,7 +95,7 @@
 		</div>
 	</section>
 
-	<section class="habilidades" id="habilidades">
+	<section class="habilidades" id="habilidades" data-an="top" >
 		<div class="chamada_section"><span class="sp-left"></span><span class="sp-center">Habilidades</span><span class="sp-rigth"></span></div>
 		
 			<div class="container">
@@ -170,7 +172,7 @@
 		</div>
 	</section>
 
-	<section class="portfolio" id="portfolio">
+	<section class="portfolio" id="portfolio" data-an="top" >
 		<div class="chamada_section"><span class="sp-left"></span><span class="sp-center">Portfólio</span><span class="sp-rigth"></span></div>	
 
 		<div class="container">
@@ -186,7 +188,7 @@
 		</div>
 	</section>
 
-	<section class="contato" id="contato">
+	<section class="contato" id="contato" data-an="top">
 		<div class="chamada_section"><span class="sp-left"></span class="sp-center"><span class="sp-center">Contato</span><span class="sp-rigth"></span></div>	
 		
 		<div class="container">
@@ -256,6 +258,14 @@
 			<h1>Leandro Souza <span>2018</span> <i class="fas fa-copyright"></i></h1>
 		
 	</footer>
-	
+
+	<!-- Animações do site-->
+	<script>
+
+
+		
+	</script>
+
+
 </body>
 </html>
