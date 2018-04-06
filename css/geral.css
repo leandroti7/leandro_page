@@ -59,7 +59,8 @@ table {
 
 section.sobre {
   background: #f5f5f5;
-  position: relative; }
+  position: relative;
+  padding-bottom: 50px; }
   section.sobre .itens {
     clear: both;
     display: -webkit-box;
@@ -159,65 +160,67 @@ section.sobre {
         font-size: 1.875rem;
         margin-bottom: 30px; }
 
-section.habilidades h1 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  color: #969696; }
-  @media (min-width: 1200px) {
-    section.habilidades h1 {
-      margin-left: 4.16667%; } }
-
-section.habilidades .icon-habilidades {
-  margin: 20px 0;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 1200px) {
-    section.habilidades .icon-habilidades {
-      float: left;
-      width: 83.33333%; } }
-  @media (min-width: 1200px) {
-    section.habilidades .icon-habilidades {
-      margin-left: 4.16667%; } }
-  section.habilidades .icon-habilidades [class^="icone-"] {
-    display: inline-block;
-    margin-right: 40px;
-    padding: 0 10px;
-    text-align: center;
-    font-size: 100px;
-    font-size: 6.25rem; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-html {
-      color: #f48d08; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-css {
-      color: #393df5; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-sass {
-      color: #c50cd1; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-bootstrap {
-      color: #670798; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-js {
-      color: #d3a60a; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-node {
-      color: #72ba72; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-gulp {
-      color: #fb0320; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-bower {
-      color: #f48d08; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-github {
-      color: #000; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-photoshop {
-      color: #1820bb; }
-    section.habilidades .icon-habilidades [class^="icone-"].icone-wordpress {
-      color: rgba(0, 0, 0, 0.7); }
-    section.habilidades .icon-habilidades [class^="icone-"] h3 {
-      color: #000;
-      font-size: 18px;
-      font-size: 1.125rem;
-      text-transform: uppercase;
-      margin-top: 20px; }
+section.habilidades {
+  padding-bottom: 50px; }
+  section.habilidades h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    color: #969696; }
+    @media (min-width: 1200px) {
+      section.habilidades h1 {
+        margin-left: 4.16667%; } }
+  section.habilidades .icon-habilidades {
+    margin: 20px 0;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 1200px) {
+      section.habilidades .icon-habilidades {
+        float: left;
+        width: 83.33333%; } }
+    @media (min-width: 1200px) {
+      section.habilidades .icon-habilidades {
+        margin-left: 4.16667%; } }
+    section.habilidades .icon-habilidades [class^="icone-"] {
+      display: inline-block;
+      margin-right: 40px;
+      padding: 0 10px;
+      text-align: center;
+      font-size: 100px;
+      font-size: 6.25rem; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-html {
+        color: #f48d08; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-css {
+        color: #393df5; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-sass {
+        color: #c50cd1; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-bootstrap {
+        color: #670798; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-js {
+        color: #d3a60a; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-node {
+        color: #72ba72; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-gulp {
+        color: #fb0320; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-bower {
+        color: #f48d08; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-github {
+        color: #000; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-photoshop {
+        color: #1820bb; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-wordpress {
+        color: rgba(0, 0, 0, 0.7); }
+      section.habilidades .icon-habilidades [class^="icone-"] h3 {
+        color: #000;
+        font-size: 18px;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        margin-top: 20px; }
 
 section.portfolio {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  padding-bottom: 50px; }
   section.portfolio .descricao {
     text-align: center;
     font-size: 30px;
@@ -250,85 +253,85 @@ section.portfolio {
       font-size: 1rem;
       margin-bottom: 30px; }
 
-section.contato .descricao {
-  text-align: center;
-  font-size: 30px;
-  font-size: 1.875rem;
-  margin: 60px 0;
-  color: #969696; }
-  section.contato .descricao strong {
-    color: #0072bc;
-    text-decoration: underline; }
-
-section.contato .texto-contato {
-  margin-top: 30px;
-  color: #969696;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 1200px) {
-    section.contato .texto-contato {
-      margin-left: 4.16667%; } }
-  @media (min-width: 1200px) {
-    section.contato .texto-contato {
-      float: left;
-      width: 100%; } }
-  section.contato .texto-contato .p1, section.contato .texto-contato .p2 {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 20px;
-    font-size: 1.25rem;
-    margin: 20px auto; }
-    @media (min-width: 1200px) {
-      section.contato .texto-contato .p1, section.contato .texto-contato .p2 {
-        float: left;
-        width: 66.66667%; } }
-    section.contato .texto-contato .p1 a, section.contato .texto-contato .p2 a {
+section.contato {
+  padding-bottom: 50px; }
+  section.contato .descricao {
+    text-align: center;
+    font-size: 30px;
+    font-size: 1.875rem;
+    margin: 60px 0;
+    color: #969696; }
+    section.contato .descricao strong {
       color: #0072bc;
       text-decoration: underline; }
-
-section.contato .form {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 80px 0 20px 0; }
-  @media (min-width: 1200px) {
-    section.contato .form {
-      margin-left: 4.16667%; } }
-  @media (min-width: 1200px) {
-    section.contato .form {
-      float: left;
-      width: 100%; } }
-  section.contato .form span,
-  section.contato .form input,
-  section.contato .form .next,
-  section.contato .form .send {
-    float: left; }
-  section.contato .form span {
+  section.contato .texto-contato {
+    margin-top: 30px;
     color: #969696;
-    margin-top: 5px; }
-  section.contato .form .campo,
-  section.contato .form .botoes {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 1200px) {
+      section.contato .texto-contato {
+        margin-left: 4.16667%; } }
+    @media (min-width: 1200px) {
+      section.contato .texto-contato {
+        float: left;
+        width: 100%; } }
+    section.contato .texto-contato .p1, section.contato .texto-contato .p2 {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 20px;
+      font-size: 1.25rem;
+      margin: 20px auto; }
+      @media (min-width: 1200px) {
+        section.contato .texto-contato .p1, section.contato .texto-contato .p2 {
+          float: left;
+          width: 66.66667%; } }
+      section.contato .texto-contato .p1 a, section.contato .texto-contato .p2 a {
+        color: #0072bc;
+        text-decoration: underline; }
+  section.contato .form {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 15px auto; }
+    margin: 80px 0 20px 0; }
     @media (min-width: 1200px) {
-      section.contato .form .campo,
-      section.contato .form .botoes {
+      section.contato .form {
+        margin-left: 4.16667%; } }
+    @media (min-width: 1200px) {
+      section.contato .form {
         float: left;
         width: 100%; } }
-    section.contato .form .campo input[type="text"],
-    section.contato .form .botoes input[type="text"] {
-      border-color: #969696;
-      border-width: 0px 0px 1px 0px;
-      width: 40%;
-      margin-left: 10px; }
+    section.contato .form span,
+    section.contato .form input,
+    section.contato .form .next,
+    section.contato .form .send {
+      float: left; }
+    section.contato .form span {
+      color: #969696;
+      margin-top: 5px; }
+    section.contato .form .campo,
+    section.contato .form .botoes {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 15px auto; }
+      @media (min-width: 1200px) {
+        section.contato .form .campo,
+        section.contato .form .botoes {
+          float: left;
+          width: 100%; } }
+      section.contato .form .campo input[type="text"],
+      section.contato .form .botoes input[type="text"] {
+        border-color: #969696;
+        border-width: 0px 0px 1px 0px;
+        width: 40%;
+        margin-left: 10px; }
 
 header {
   position: relative;
@@ -354,10 +357,12 @@ header {
       height: 100%;
       padding: 5px 10px; }
       header .barra-header .logo:hover {
-        background-color: rgba(173, 216, 230, 0.4);
+        background-color: rgba(0, 0, 0, 0.8);
         -webkit-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s; }
+        header .barra-header .logo:hover a {
+          color: #f48d08; }
       header .barra-header .logo a {
         color: #3d8af7;
         display: block;
@@ -415,6 +420,10 @@ header {
       header .chamada p .second {
         border-bottom: 3px solid #072c61; }
 
+/* ## Efeito scroll ## */
+.ativo a {
+  color: #f48d08; }
+
 footer {
   background-color: #1b242f;
   height: 450px; }
@@ -461,7 +470,6 @@ footer {
 
 .chamada_section {
   height: 130px;
-  background: #a3adbc;
   clear: both; }
   .chamada_section .sp-left {
     top: 50%;

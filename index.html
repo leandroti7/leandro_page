@@ -13,11 +13,11 @@
 	<header>
 		<div class="barra-header">
 			<div class="logo">
-				<a href="#" onclick="$('body').animatescroll();" ><h1>Leandro Souza</h1></a>
+				<a href="index.html" ><h1>Leandro Souza</h1></a>
 			</div>
 			<nav class="menu" >
 				<ul>
-					<li><a href="#" onclick="$('#sobre1').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Sobre</a></li>
+					<li class=""><a href="#" onclick="$('#sobre1').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Sobre</a></li>
 					<li><a href="#" onclick="$('#habilidades').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Habilidades</a></li>
 					<li><a href="#" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Portfolio</a></li>
 					<li><a href="#" onclick="$('#contato').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Contato</a></li>
@@ -32,7 +32,7 @@
 		</div>
 	</header>
 
-	<section class="sobre" id="sobre1"  data-anime="top">
+	<section class="sobre screen" id="sobre1"  data-anime="top">
 		
 		<div class="chamada_section">
 			<span class="sp-left"></span>
@@ -95,7 +95,7 @@
 		</div>
 	</section>
 
-	<section class="habilidades" id="habilidades" data-an="top" >
+	<section class="habilidades screen" id="habilidades" data-an="top" >
 		<div class="chamada_section"><span class="sp-left"></span><span class="sp-center">Habilidades</span><span class="sp-rigth"></span></div>
 		
 			<div class="container">
@@ -172,7 +172,7 @@
 		</div>
 	</section>
 
-	<section class="portfolio" id="portfolio" data-an="top" >
+	<section class="portfolio screen" id="portfolio" data-an="top" >
 		<div class="chamada_section"><span class="sp-left"></span><span class="sp-center">Portfólio</span><span class="sp-rigth"></span></div>	
 
 		<div class="container">
@@ -188,7 +188,7 @@
 		</div>
 	</section>
 
-	<section class="contato" id="contato" data-an="top">
+	<section class="contato screen" id="contato" data-an="top">
 		<div class="chamada_section"><span class="sp-left"></span class="sp-center"><span class="sp-center">Contato</span><span class="sp-rigth"></span></div>	
 		
 		<div class="container">
@@ -261,8 +261,32 @@
 
 	<!-- Animações do site-->
 	<script>
+		$(window).scroll(function() {
+        //Altura atual do scroll
+        var tamScroll = $(this).scrollTop();
 
+        //Altura para disparar ação
+        if(tamScroll >= -100)
+        {
+            //Loop para section
+            $('.screen').each(function(i) {
+                //verifica altura da section
+                if ($(this).position().top <= tamScroll + 85) {
+                    //Se satisfaz a condição, remove o link atual
+                    $('nav li.ativo').removeClass('ativo');
+                    //Adiciona classe no novo link da section atual
+                    $('nav li').eq(i).addClass('ativo');
+                }
+            });
+        }
+        else
+        {
+            //Caso não satisfaça condição principal, a página está no topo.
+            $('nav li.ativo').removeClass('ativo');
+            $('nav li:first').addClass('ativo');
+        }
 
+    });
 		
 	</script>
 
