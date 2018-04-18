@@ -62,25 +62,28 @@ section.sobre {
   position: relative;
   padding-bottom: 50px; }
   section.sobre .itens {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
     clear: both;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
+    background: #81e08a;
     margin: 65px auto;
     text-align: center; }
+    @media (min-width: 768px) {
+      section.sobre .itens {
+        float: left;
+        width: 100%; } }
     section.sobre .itens [class^="topicos-"] {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
       border: 1px solid #000;
-      margin: 10px;
       font-size: 20px;
       font-size: 1.25rem;
       z-index: 1; }
-      @media (min-width: 1200px) {
+      @media (min-width: 768px) {
         section.sobre .itens [class^="topicos-"] {
           float: left;
           width: 25%; } }
@@ -129,25 +132,29 @@ section.sobre {
           border-color: #0072bc transparent transparent; }
   section.sobre .textos {
     text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 25px;
     font-size: 1.5625rem; }
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       section.sobre .textos {
         float: left;
         width: 100%; } }
     section.sobre .textos .p1, section.sobre .textos .p2 {
-      margin: 5px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: 1px solid #000;
+      margin: 10px;
       padding: 5px;
       color: #969696; }
+      @media (min-width: 768px) {
+        section.sobre .textos .p1, section.sobre .textos .p2 {
+          float: left;
+          width: 50%; } }
       section.sobre .textos .p1 strong, section.sobre .textos .p2 strong {
         color: #0072bc;
         font-weight: 600; }
@@ -487,8 +494,8 @@ footer {
       .chamada_section .sp-left {
         margin-left: 8.33333%; } }
   .chamada_section .sp-center {
-    font-size: 60px;
-    font-size: 3.75rem;
+    font-size: 50px;
+    font-size: 3.125rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 120px;
