@@ -42,20 +42,20 @@ header
 				letter-spacing: 2px
 				+font-size(24px)
 
-			a
-				+breakpoint($sm_celular)
+			
+				+breakpoint($celular)
 					+font-size(20px)
 
 
 
 		.menu
 			float: right
-			margin: 15px
+			margin: 15px 5px
+			//background-color: #fff
 			ul
 				display: inline-flex
 				
-			ul
-				+breakpoint($tablet)
+				+breakpoint($celular)
 					display: none
 				li
 					margin: 10px;
@@ -64,8 +64,6 @@ header
 					color: $azul-claro
 					letter-spacing: 2px
 					
-
-
 					a	
 						padding: 18px 0
 						
@@ -74,6 +72,7 @@ header
 							+transition(0s)
 							color: $laranja
 							border-bottom: 3px solid $laranja
+		
 						
 
 
@@ -104,7 +103,7 @@ header
 			font-weight: $regular
 			+font-size(25px)
 			margin: 0 0 10% 0
-		h3
+
 			+breakpoint($celular)
 				+font-size(20px)
 				margin-bottom: 30%

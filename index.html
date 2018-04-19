@@ -23,7 +23,23 @@
 					<li><a href="#" onclick="$('#contato').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Contato</a></li>
 				</ul>				
 			</nav>
+
+			<a class="toogle" href="">
+					<span></span>
+					<span></span>
+					<span></span>
+			</a>
 		</div>
+
+		<nav class="menu-responsivo"> <!--menu responivo para dispositivos moveis-->
+			<ul>
+				<li class=""><a href="#" onclick="$('#sobre1').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Sobre</a></li>
+				<li><a href="#" onclick="$('#habilidades').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Habilidades</a></li>
+				<li><a href="#" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Portfolio</a></li>
+				<li><a href="#" onclick="$('#contato').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Contato</a></li>
+			</ul>
+		</nav>
+				
 		<div class="chamada">
 			<img src="galeria/foto1.png" alt="Leandro Souza" class="my-foto">
 			<h3>Desenvolvedor Front-End</h3>
@@ -274,15 +290,19 @@
                 if ($(this).position().top <= tamScroll + 85) {
                     //Se satisfaz a condição, remove o link atual
                     $('nav li.ativo').removeClass('ativo');
+                    $('.menu-responsivo li.visit').removeClass('visit');// Menu reponsivo
                     //Adiciona classe no novo link da section atual
                     $('nav li').eq(i).addClass('ativo');
+                    $('.menu-responsivo li').eq(i).addClass('visit');// Menu reponsivo
                 }
             });
         }
         else
         {
             //Caso não satisfaça condição principal, a página está no topo.
+            $('.menu-responsivo li.visit').removeClass('visit');// Menu reponsivo
             $('nav li.ativo').removeClass('ativo');
+            $('.menu-responsivo li:first').addClass('visit');// Menu reponsivo
             $('nav li:first').addClass('ativo');
         }
 
