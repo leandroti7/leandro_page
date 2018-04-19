@@ -7,34 +7,47 @@ section.sobre
 	.itens
 		+make-sm-column(12)
 		clear: both	
-		background: $bg_verde_ligth
+		//background: $bg_verde_ligth
 		//+flexbox
-		margin: 65px auto
+		margin: 65px auto 150px auto
 		text-align: center
 
 
 		[class^="topicos-"]
 			+make-sm-column(3)
-			border: 1px solid #000
-			+font-size(20px)
+			//border: 1px solid #000
+			color: $cinza-escuro
+			font-size: 12pt
 			z-index: 1
+	
+		[class^="topicos-"]
+			+breakpoint($tablet)
+				+make-sm-column(6)
+				margin: 40px auto
+
+
+		[class^="topicos-"]
+			+breakpoint($sm_celular)
+				padding-bottom: 5px
+				&:hover
+					border-bottom: 1px solid #c8c8c8c8
 
 			h1
-				color: $cinza-escuro
+				color: $cinza_wp
+				font-size: 20pt
 				font-weight: $semi-bold
-				margin: 10px 0
-				
+				margin: 10px auto	
 				//background: $bg_ligth_cinza
 
 
 			[class^="icone-"]
 					margin: 0px 20px
-					background: $azul-claro
-					padding: 0px 0
+					//background: $azul-claro
+					padding: 20px 0
 
 
 					.hep
-						margin: 40px auto
+						margin: 10px auto
 						width: 120px
 						position: relative
 						border-bottom: 50px solid $azul
@@ -72,7 +85,7 @@ section.sobre
 						z-index: 3
 						color: $branco
 						+font-size(48px)
-						top: -75px
+						top: -45px
 						//background: $bg_ligth_cinza
 							
 
@@ -81,7 +94,9 @@ section.sobre
 		text-align: center
 		+flexbox
 		+make-sm-column(12)
-		+font-size(25px)
+		font-size: 14pt
+		
+		
 
 	.textos
 		+breakpoint($tablet)
@@ -90,8 +105,9 @@ section.sobre
 
 
 		.p1,.p2
-			+make-sm-column(12)
-			margin: 15px
+			+make-sm-column(6)
+			+make-sm-column-offset(1)
+			margin: 15px 35px
 			padding: 5px
 			color: $cinza-escuro
 
@@ -111,7 +127,8 @@ section.sobre
 				font-weight: $semi-bold
 
 			h1
-				+font-size(30px)
+				color: $cinza_wp
+				font-size: 20pt
 				margin-bottom: 30px
 
 
