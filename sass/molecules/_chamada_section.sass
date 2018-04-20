@@ -1,58 +1,28 @@
 .chamada_section
-		height: 130px
+		height: 120px
 		clear: both
+		text-align: center
+		+gradient(80deg,$branco,$bg_cinza_ligth)
+		//background-image: linear-gradient(180deg,$branco,$sombra_box 10%,$bg_cinza_ligth)
 		
-		
- 
-		.sp-left
-			top: 50%
-			height: 2px
-			background: $azul-escuro
-			+make-sm-column(2)
-			+make-sm-column-offset(1)
-
-		.sp-left
-			+breakpoint($tablet)
-				+make-sm-column-offset(0.5)
-		.sp-left
-			+breakpoint($sm_celular)
-				+make-sm-column(3)
-
 		.sp-center
 			//background: #6568cc
-			text-align: center
-			+font-size(30pt)
+			+font-size(40pt)
 			text-transform: uppercase
 			letter-spacing: 5px
 			line-height: 120px
-			height: 2px
-			+make-sm-column(2)
-			+make-sm-column-offset(2)
+			height: 12px
+			border-bottom: 3px solid  #000
+			
 
-		.sp-center
-			+breakpoint($tablet)
-				+make-sm-column-offset(1.5)
-		.sp-center
 			+breakpoint($sm_celular)
-				+make-sm-column(3)
+				+font-size(27pt)
+				font-weight: $semi-bold
+			
+			//+make-sm-column-offset(5)
 
-		.sp-rigth
-			top: 50% 
-			line-height: 150px
-			height: 2px
-			background: $azul-escuro		
-			+make-sm-column(2)
-			+make-sm-column-offset(9)
 
-		.sp-rigth
-			+breakpoint($tablet)
-				+make-sm-column-offset(8.5)
-		.sp-rigth
-			+breakpoint($sm_celular)
-				+make-sm-column(3)
+		
 
-.chamada_section
-	+breakpoint($celular)
-		background: $bg_ligth_cinza
 
 		

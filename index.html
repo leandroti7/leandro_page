@@ -24,7 +24,7 @@
 				</ul>				
 			</nav>
 
-			<a class="toogle" href="">
+			<a class="toogle" href="javascript:;">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -47,13 +47,13 @@
 			<p>that <span class="second">make a difference</span></p>
 		</div>
 	</header>
-
+	
+	<!-- section sobre-->
 	<section class="sobre screen" id="sobre1"  data-anime="top">
 		
 		<div class="chamada_section">
-			<span class="sp-left"></span>
 				<span class="sp-center">Sobre</span>
-			<span class="sp-rigth"></span>
+				<div class="bottom"></div>
 		</div>
 		
 		<div class="container">
@@ -110,9 +110,9 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- section habilidades-->
 	<section class="habilidades screen" id="habilidades" data-an="top" >
-		<div class="chamada_section"><span class="sp-left"></span><span class="sp-center">Habilidades</span><span class="sp-rigth"></span></div>
+		<div class="chamada_section"><span class=""></span><span class="sp-center">Habilidades</span><span class=""></span></div>
 		
 			<div class="container">
 				<div class="html box">
@@ -187,9 +187,9 @@
 				</div>
 		</div>
 	</section>
-
+	<!-- section portfolio-->
 	<section class="portfolio screen" id="portfolio" data-an="top" >
-		<div class="chamada_section"><span class="sp-left"></span><span class="sp-center">Portfólio</span><span class="sp-rigth"></span></div>	
+		<div class="chamada_section"><span class=""></span><span class="sp-center">Portfólio</span><span class=""></span></div>	
 
 		<div class="container">
 			<h1 class="descricao">Meus <strong>Jobs</strong> mais recentes</h1>
@@ -203,9 +203,9 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- section contato-->
 	<section class="contato screen" id="contato" data-an="top">
-		<div class="chamada_section"><span class="sp-left"></span class="sp-center"><span class="sp-center">Contato</span><span class="sp-rigth"></span></div>	
+		<div class="chamada_section"><span class=""></span class="sp-center"><span class="sp-center">Contato</span><span class=""></span></div>	
 		
 		<div class="container">
 			<h1 class="descricao"><strong>Contacte</strong>-me</h1>
@@ -277,7 +277,25 @@
 
 	<!-- Animações do site-->
 	<script>
+		$(function(){
+			$('.toogle').click(function(){
+				$('.toogle').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('clk');
+				$('.chamada').toggleClass('down');
+			});
+		});//Função ativa o menu responsivo
+
+		$(function(){
+			$('section, footer, .chamada').click(function(){
+				if($('.toogle.ativo') && $('.menu-responsivo.clk')){
+					$('.toogle').removeClass('ativo');
+					$('.menu-responsivo').removeClass('clk');
+				}
+			});
+		});//Função fecha menu com click em qualquer parte do site
+
 		$(window).scroll(function() {
+
         //Altura atual do scroll
         var tamScroll = $(this).scrollTop();
 

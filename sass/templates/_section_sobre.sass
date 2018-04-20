@@ -17,13 +17,14 @@ section.sobre
 			+make-sm-column(3)
 			//border: 1px solid #000
 			color: $cinza-escuro
-			font-size: 12pt
+			+font-size(20px)
 			z-index: 1
 	
 		[class^="topicos-"]
 			+breakpoint($tablet)
 				+make-sm-column(6)
 				margin: 40px auto
+				+font-size(18px)
 
 
 		[class^="topicos-"]
@@ -94,13 +95,15 @@ section.sobre
 		text-align: center
 		+flexbox
 		+make-sm-column(12)
-		font-size: 14pt
+		+font-size(20px)
 		
 		
 
 	.textos
 		+breakpoint($tablet)
 			display: block
+			+font-size(18px)
+
 	
 
 

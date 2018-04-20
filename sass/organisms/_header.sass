@@ -1,8 +1,7 @@
 header
 	+clearfix
 	position: relative
-	height: 100vh
-	min-height: 100vh
+	
 
 	background:
 		image: url('../galeria/fundo1.png')
@@ -18,7 +17,7 @@ header
 		float: left
 		background: $bg_footer
 		position: fixed
-		z-index: 1030; 
+		z-index: 1080; 
 
 		.logo
 			display: inline-flex
@@ -69,7 +68,6 @@ header
 						
 
 						&:hover
-							+transition(0s)
 							color: $laranja
 							border-bottom: 3px solid $laranja
 		
@@ -80,9 +78,15 @@ header
 		text-align: center
 		color: $azul-escuro	
 		margin: 100px 0
+
+		&.down
+			margin-top: 250px;
+			+transition(.5s)
+
+
 		.my-foto
 			clear: both
-			border-radius: 50%
+			+border-radius(50%)
 			border: 10px solid rgb(255,255,255)
 			margin-bottom: 1%
 			width: 250px
