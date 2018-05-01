@@ -221,13 +221,20 @@ section.habilidades {
     @media (min-width: 768px) {
       section.habilidades .icon-habilidades {
         margin-left: 4.16667%; } }
+    @media (max-width: 767px) {
+      section.habilidades .icon-habilidades {
+        margin: 0; } }
     section.habilidades .icon-habilidades [class^="icone-"] {
       display: inline-block;
-      margin-right: 40px;
+      margin: 0 40px 25px 0;
       padding: 0 10px;
       text-align: center;
       font-size: 100px;
       font-size: 6.25rem; }
+      @media (max-width: 767px) {
+        section.habilidades .icon-habilidades [class^="icone-"] {
+          font-size: 75px;
+          font-size: 4.6875rem; } }
       section.habilidades .icon-habilidades [class^="icone-"].icone-html {
         color: #f48d08; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-css {
@@ -275,13 +282,18 @@ section.portfolio {
     padding-right: 15px;
     padding: 10px 15px 10px;
     background: white; }
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       section.portfolio .print-job {
         float: left;
         width: 33.33333%; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       section.portfolio .print-job {
         margin-left: 4.16667%; } }
+    section.portfolio .print-job:hover {
+      box-shadow: 4px 2px 8px 2px gray;
+      -webkit-transition: 0.8s;
+      -o-transition: 0.8s;
+      transition: 0.8s; }
     section.portfolio .print-job h1 {
       font-size: 18px;
       font-size: 1.125rem;
@@ -291,6 +303,22 @@ section.portfolio {
       font-size: 16px;
       font-size: 1rem;
       margin-bottom: 30px; }
+  section.portfolio .print-hover {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    top: 0px;
+    padding: 10px 15px 10px;
+    background: red; }
+    @media (min-width: 768px) {
+      section.portfolio .print-hover {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 768px) {
+      section.portfolio .print-hover {
+        margin-left: 4.16667%; } }
 
 section.contato {
   padding-bottom: 50px; }
@@ -310,10 +338,10 @@ section.contato {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       section.contato .texto-contato {
         margin-left: 4.16667%; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       section.contato .texto-contato {
         float: left;
         width: 100%; } }
@@ -325,7 +353,7 @@ section.contato {
       font-size: 20px;
       font-size: 1.25rem;
       margin: 20px auto; }
-      @media (min-width: 1200px) {
+      @media (min-width: 768px) {
         section.contato .texto-contato .p1, section.contato .texto-contato .p2 {
           float: left;
           width: 66.66667%; } }
@@ -342,10 +370,10 @@ section.contato {
     padding-left: 15px;
     padding-right: 15px;
     margin: 80px 0 20px 0; }
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       section.contato .form {
         margin-left: 4.16667%; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       section.contato .form {
         float: left;
         width: 100%; } }
@@ -364,7 +392,7 @@ section.contato {
       padding-left: 15px;
       padding-right: 15px;
       margin: 15px auto; }
-      @media (min-width: 1200px) {
+      @media (min-width: 768px) {
         section.contato .form .campo,
         section.contato .form .botoes {
           float: left;
@@ -375,6 +403,11 @@ section.contato {
         border-width: 0px 0px 1px 0px;
         width: 40%;
         margin-left: 10px; }
+        @media (max-width: 991px) {
+          section.contato .form .campo input[type="text"],
+          section.contato .form .botoes input[type="text"] {
+            margin-bottom: 10px;
+            width: 80%; } }
 
 header {
   position: relative;
@@ -683,6 +716,7 @@ footer {
       float: left;
       width: 91.66667%; } }
   .box .line {
+    display: block;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -697,6 +731,10 @@ footer {
     @media (min-width: 768px) {
       .box .line {
         margin-left: 4.16667%; } }
+    @media (max-width: 767px) {
+      .box .line {
+        display: block;
+        margin-right: 20px; } }
 
 .btn {
   border-radius: 5px;
@@ -708,9 +746,20 @@ footer {
   padding: 10px;
   margin-right: 25px;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7); }
+  @media (max-width: 991px) {
+    .btn {
+      font-size: 14px;
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+      padding: 5px;
+      margin-right: 20px; } }
   .btn i {
     font-size: 18px;
     font-size: 1.125rem; }
+    @media (max-width: 991px) {
+      .btn i {
+        font-size: 14px;
+        font-size: 0.875rem; } }
 
 .next {
   background-color: #0072bc; }

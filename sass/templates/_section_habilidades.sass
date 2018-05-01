@@ -13,16 +13,23 @@ section.habilidades
 			+make-sm-column(10)
 			+make-sm-column-offset(0.5)
 
+			+breakpoint($celular)
+				margin: 0
+				
+
 
 			[class^="icone-"]
 				//background: $verde
 				//border: 1px solid #000
 				display: inline-block
-				margin-right: 40px 
+				margin: 0 40px 25px 0 
 				padding: 0 10px
 				text-align: center
 				+font-size(100px)
-				
+
+				+breakpoint($celular)
+					+font-size(75px)
+
 				
 				&.icone-html
 						color: $laranja

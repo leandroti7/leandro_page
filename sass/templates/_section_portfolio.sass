@@ -11,11 +11,15 @@ section.portfolio
 			color: $azul
 
 	.print-job
-		+make-lg-column(4)
-		+make-lg-column-offset(0.5)
+		+make-sm-column(4)
+		+make-sm-column-offset(0.5)
 		//border: 1px solid #000
 		padding: 10px 15px 10px
 		background: $branco
+
+		&:hover
+			box-shadow: 4px 2px 8px 2px gray
+			+transition(0.8s)
 
 
 		h1
@@ -26,6 +30,16 @@ section.portfolio
 		h3
 			+font-size(16px)
 			margin-bottom: 30px
+
+	.print-hover
+		+make-sm-column(4)
+		+make-sm-column-offset(0.5)
+		position: relative
+		top: 0px
+		//border: 1px solid #000
+		padding: 10px 15px 10px
+		background: red
+		
 
 		
 
