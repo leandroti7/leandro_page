@@ -10,35 +10,54 @@ section.portfolio
 		strong
 			color: $azul
 
-	.print-job
-		+make-sm-column(4)
-		+make-sm-column-offset(0.5)
-		//border: 1px solid #000
-		padding: 10px 15px 10px
-		background: $branco
+	.container-job
+		+make-sm-column(12)
+		//background-color: #0a7f6d
 
-		&:hover
-			box-shadow: 4px 2px 8px 2px gray
-			+transition(0.8s)
+		.print-job
+			+make-xs-column(4)
+			padding: 10px
+			//border: 1px solid #000035
+			//background: #00c000
 
 
-		h1
-			+font-size(18px)
-			margin: 15px 0
-			letter-spacing: 2px
+			.info-job
+				+border-radius(3px)
+				padding: 10px 15px 10px
+				background: $branco
+				box-shadow: 1px 1px 4px -1px #b7b7b7
+				+transition(0.8s)
 
-		h3
-			+font-size(16px)
-			margin-bottom: 30px
+				&:hover
+					box-shadow: 1px 0px 10px 4px #b7b7b7
+					+transition(0.8s)
+
+				h1
+					+font-size(18px)
+					margin: 10px 0
+					letter-spacing: 2px
+
+				h3
+					+font-size(16px)
+					margin-bottom: 25px
+
+		.print-job
+			+breakpoint($tablet)
+				+make-xs-column(6)
+
+		.print-job
+			+breakpoint($sm_celular)
+				+make-xs-column(12)
+
+
 
 	.print-hover
-		+make-sm-column(4)
-		+make-sm-column-offset(0.5)
+		+make-xs-column(4)
 		position: relative
 		top: 0px
 		//border: 1px solid #000
-		padding: 10px 15px 10px
 		background: red
+
 		
 
 		
