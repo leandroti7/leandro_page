@@ -11,28 +11,12 @@
 </head>
 
 <body>
-	<header>
-		<div class="barra-header">
-			<div class="logo">
-				<a href="index.html" ><h1>Leandro Souza</h1></a>
-			</div>
-			<nav class="menu" >
-				<ul>
-					<li class=""><a href="#" onclick="$('#sobre1').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Sobre</a></li>
-					<li><a href="#" onclick="$('#habilidades').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Habilidades</a></li>
-					<li><a href="#" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Portfolio</a></li>
-					<li><a href="#" onclick="$('#contato').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Contato</a></li>
-				</ul>				
-			</nav>
-
-			<a class="toogle" href="javascript:;">
-					<span></span>
-					<span></span>
-					<span></span>
-			</a>
+<header>
+	<div class="barra-header">
+		<div class="logo">
+			<a href="index.html" ><h1>Leandro Souza</h1></a>
 		</div>
-
-		<nav class="menu-responsivo"> <!--menu responivo para dispositivos moveis-->
+		<nav class="menu" >
 			<ul>
 				<li class=""><a href="#" onclick="$('#sobre1').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Sobre</a></li>
 				<li><a href="#" onclick="$('#habilidades').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Habilidades</a></li>
@@ -40,234 +24,250 @@
 				<li><a href="#" onclick="$('#contato').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Contato</a></li>
 			</ul>
 		</nav>
-				
-		<div class="chamada">
-			<img src="galeria/foto1.png" alt="Leandro Souza" class="my-foto">
-			<h3>Desenvolvedor Front-End</h3>
-			<p>I want to <span class="first">make things</span></p>
-			<p>that <span class="second">make a difference</span></p>
-		</div>
-	</header>
-	
-	<!-- section sobre-->
-	<section class="sobre screen" id="sobre1"  data-anime="top">
-		
-		<div class="chamada_section">
-				<span class="sp-center">Sobre</span>
-				<div class="bottom"></div>
-		</div>
-		
-		<div class="container">
-			<div class="itens">
-				
-				<div class="topicos-rapido" >
 
-					<div class="icone-clock" >
-						<div class="hep"></div>
-						<i class="fas fa-tachometer-alt pos"></i>
-					</div>
-					<h1>Rápido</h1>
-					<p>Agilidade no carregamento do site, uma das prioridades.</p>
+		<a class="toogle" href="javascript:;">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+	</div>
+
+	<nav class="menu-responsivo"> <!--menu responivo para dispositivos moveis-->
+		<ul>
+			<li class=""><a href="#" onclick="$('#sobre1').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Sobre</a></li>
+			<li><a href="#" onclick="$('#habilidades').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Habilidades</a></li>
+			<li><a href="#" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Portfolio</a></li>
+			<li><a href="#" onclick="$('#contato').animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:66});">Contato</a></li>
+		</ul>
+	</nav>
+
+	<div class="chamada">
+		<img src="galeria/foto1.png" alt="Leandro Souza" class="my-foto">
+		<h3>Desenvolvedor Front-End</h3>
+		<p>I want to <span class="first">make things</span></p>
+		<p>that <span class="second">make a difference</span></p>
+	</div>
+</header>
+
+<!-- section sobre-->
+<section class="sobre screen" id="sobre1"  data-anime="top">
+
+	<div class="chamada_section">
+		<span class="sp-center">Sobre</span>
+		<div class="bottom"></div>
+	</div>
+
+	<div class="container">
+		<div class="itens">
+
+			<div class="topicos-rapido" >
+
+				<div class="icone-clock" >
+					<div class="hep"></div>
+					<i class="fas fa-tachometer-alt pos"></i>
 				</div>
-
-
-				<div class="topicos-identado">
-					<div class="icone-code">
-						<div class="hep"></div>
-						<i class="fas fa-code"></i>
-					</div>
-					<h1>Idêntado</h1>
-					<p>Código indêntado e limpo disponibiliza fácil entendimento, manutenção ou alteração de algo nesessário no site.</p>
-				</div>
-
-				<div class="topicos-reponsivo">
-					<div class="icone-window">
-						<div class="hep"></div>
-						<i class="fas fa-laptop"></i><i class="fas fa-mobile"></i>
-					</div>
-					<h1>Respônsivo</h1>
-					<p>Site totalmente respônsivo pode ser acessado por vários dispositivos e tamanhos de telas diferente.</p>
-				</div>
-
-				<div class="topicos-dinamico">
-					<div class="icone-rocekt">
-						<div class="hep"></div>
-						<i class="fas fa-rocket"></i>
-					</div>
-					<h1>Dinâmico</h1>
-					<p>Páginas bastante intuitivas e dinâmicas, proporcionando melhor navegação do site.</p>
-				</div>	
+				<h1>Rápido</h1>
+				<p>Agilidade no carregamento do site, uma das prioridades.</p>
 			</div>
 
-			<div class="textos">
-				<div class="p1">
-				 	<h1>Quem sou <strong>eu</strong> ?</h1>
-				 	<p>Desenvolvedor web Front-end, amante da tecnologia e suas evolições, e cada dia mais fascinado com suaspossibilidades de inovar e transformar idéias em realidade.</p>
+
+			<div class="topicos-identado">
+				<div class="icone-code">
+					<div class="hep"></div>
+					<i class="fas fa-code"></i>
 				</div>
-				<div class="p2">
-					<h1>Conhecimentos !</h1>
-				 	<p>Formado em Análise e Desenvolvimento de Sistemas, busco me aprimorar cada vez mais em conhecimentos para continuar a oferecer soluções que realmente <span>faça a diferença.</span></p>
+				<h1>Idêntado</h1>
+				<p>Código indêntado e limpo disponibiliza fácil entendimento, manutenção ou alteração de algo nesessário no site.</p>
+			</div>
+
+			<div class="topicos-reponsivo">
+				<div class="icone-window">
+					<div class="hep"></div>
+					<i class="fas fa-laptop"></i><i class="fas fa-mobile"></i>
+				</div>
+				<h1>Respônsivo</h1>
+				<p>Site totalmente respônsivo pode ser acessado por vários dispositivos e tamanhos de telas diferente.</p>
+			</div>
+
+			<div class="topicos-dinamico">
+				<div class="icone-rocekt">
+					<div class="hep"></div>
+					<i class="fas fa-rocket"></i>
+				</div>
+				<h1>Dinâmico</h1>
+				<p>Páginas bastante intuitivas e dinâmicas, proporcionando melhor navegação do site.</p>
+			</div>
+		</div>
+
+		<div class="textos">
+			<div class="p1">
+				<h1>Quem sou <strong>eu</strong> ?</h1>
+				<p>Desenvolvedor web Front-end, amante da tecnologia e suas evolições, e cada dia mais fascinado com suaspossibilidades de inovar e transformar idéias em realidade.</p>
+			</div>
+			<div class="p2">
+				<h1>Conhecimentos !</h1>
+				<p>Formado em Análise e Desenvolvimento de Sistemas, busco me aprimorar cada vez mais em conhecimentos para continuar a oferecer soluções que realmente <span>faça a diferença.</span></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- section habilidades-->
+<section class="habilidades screen" id="habilidades" data-an="top" >
+	<div class="chamada_section"><span class=""></span><span class="sp-center">Habilidades</span><span class=""></span></div>
+
+	<div class="container">
+		<div class="html box">
+			<h1>Html</h1>
+			<span class="line"></span>
+			<div class="icon-habilidades">
+				<div class="icone-html"><i class="fab fa-html5"></i>
+					<h3>html5</h3>
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<!-- section habilidades-->
-	<section class="habilidades screen" id="habilidades" data-an="top" >
-		<div class="chamada_section"><span class=""></span><span class="sp-center">Habilidades</span><span class=""></span></div>
-		
-			<div class="container">
-				<div class="html box">
-						<h1>Html</h1>
-						<span class="line"></span>
-						<div class="icon-habilidades">
-							<div class="icone-html"><i class="fab fa-html5"></i>
-								<h3>html5</h3>
-							</div>
-						</div>
+		<div class="css box">
+			<h1>Css</h1>
+			<span class="line"></span>
+			<div class="icon-habilidades">
+				<div class="icone-css"><i class="fab fa-css3-alt"></i>
+					<h3>css3</h3>
 				</div>
 
-				<div class="css box">
-						<h1>Css</h1>
-						<span class="line"></span>
-						<div class="icon-habilidades">
-							<div class="icone-css"><i class="fab fa-css3-alt"></i>
-								<h3>css3</h3>
-							</div>
-
-							<div class="icone-sass"><i class="fab fa-sass"></i>
-							<h3>sass</h3>
-							</div>
-
-							<div class="icone-bootstrap"><i class="icon-rus-vk-01"></i>
-								<h3>bootstrap</h3>
-							</div>
-						</div>
+				<div class="icone-sass"><i class="fab fa-sass"></i>
+					<h3>sass</h3>
 				</div>
 
-				<div class="javascript box">
-						<h1>Javascript</h1>
-						<span class="line"></span>
-						<div class="icon-habilidades">
-							<div class="icone-js"><i class="fab fa-js-square"></i>
-								<h3>javascript</h3>
-							</div>
-							<div class="icone-node"><i class="fab fa-node-js"></i>
-								<h3>Node</h3>
-							</div>
-						</div>
+				<div class="icone-bootstrap"><i class="icon-rus-vk-01"></i>
+					<h3>bootstrap</h3>
 				</div>
-
-				<div class="ferramentas box">
-						<h1>Ferramentas</h1>
-						<span class="line"></span>
-						<div class="icon-habilidades">
-							<div class="icone-gulp"><i class="fab fa-gulp"></i>
-								<h3>Gulp</h3>
-							</div>
-							<div class="icone-bower"><i class="bower"></i>
-								<h3>Bower</h3>
-							</div>
-							<div class="icone-github"><i class="fab fa-github"></i>
-								<h3>GitHub</h3>
-							</div>
-							<div class="icone-photoshop"><i class="icon-adb-photoshop"></i>
-								<h3>Photoshop</h3>
-							</div>	
-						</div>
-				</div>
-
-
-				<div class="cms box">
-						<h1>Cms</h1>
-						<span class="line"></span>
-						<div class="icon-habilidades">
-							<div class="icone-wordpress"><i class="fab fa-wordpress"></i>
-								<h3>Wordpress</h3>
-							</div>	
-						</div>
-				</div>
-		</div>
-	</section>
-
-	<!-- section portfolio-->
-	<section class="portfolio screen" id="portfolio" data-an="top" >
-		<div class="chamada_section"><span class=""></span><span class="sp-center">Portfólio</span><span class=""></span></div>	
-
-		<div class="container">
-			<h1 class="descricao">Meus <strong>Jobs</strong> mais recentes</h1>
-			<div class="container-job">
-				<div class="print-job ">
-					<div class="info-job">
-						<img src="galeria/jobs/portfolio.PNG" class="img-responsive" alt="Job Portfólio">
-						<h1>Meu Portfólio</h1>
-						<h3>Website Design</h3>
-					</div>
-				</div>
-				<div class="print-job ">
-					<div class="info-job">
-						<img src="galeria/jobs/assine-live.PNG" class="img-responsive" alt="Job Portfólio">
-						<h1>Meu Portfólio</h1>
-						<h3>Website Design</h3>
-					</div>
-				</div>
-				<div class="print-job ">
-					<div class="info-job">
-						<img src="galeria/jobs/consulta-debito.PNG" class="img-responsive" alt="Job Portfólio">
-						<h1>Meu Portfólio</h1>
-						<h3>Website Design</h3>
-					</div>
-				</div>
-				<div class="print-job ">
-					<div class="info-job">
-						<img src="galeria/jobs/adt.PNG" class="img-responsive" alt="Job Portfólio">
-						<h1>Meu Portfólio</h1>
-						<h3>Website Design</h3>
-					</div>
-				</div>
-				<div class="print-job ">
-					<div class="info-job">
-						<img src="galeria/jobs/porto-seguro.PNG" class="img-responsive" alt="Job Portfólio">
-						<h1>Meu Portfólio</h1>
-						<h3>Website Design</h3>
-					</div>
-				</div>
-				<div class="print-job ">
-					<div class="info-job">
-						<img src="galeria/jobs/localize.PNG" class="img-responsive" alt="Job Portfólio">
-						<h1>Meu Portfólio</h1>
-						<h3>Website Design</h3>
-					</div>
-				</div>
-
 			</div>
 		</div>
-	</section>
 
-	<!-- section contato-->
-	<section class="contato screen" id="contato" data-an="top">
-		<div class="chamada_section"><span class=""></span><span class="sp-center">Contato</span><span class=""></span></div>
-		
-		<div class="container">
-			<h1 class="descricao"><strong>Contacte</strong>-me</h1>
-			<div class="texto-contato">
-				<p class="p1">Sinta-se a vontade para entrar em contato comigo, se gostou do meu trabalho ou se tiver algum projeto em que eu possa colaborar.</p>
-				<p class="p2">Mande um e-mail para <a href="#">leandro.dasilvati7@gmail.com</a> preenchendo o formulário a baixo...</p>
+		<div class="javascript box">
+			<h1>Javascript</h1>
+			<span class="line"></span>
+			<div class="icon-habilidades">
+				<div class="icone-js"><i class="fab fa-js-square"></i>
+					<h3>javascript</h3>
+				</div>
+				<div class="icone-node"><i class="fab fa-node-js"></i>
+					<h3>Node</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="ferramentas box">
+			<h1>Ferramentas</h1>
+			<span class="line"></span>
+			<div class="icon-habilidades">
+				<div class="icone-gulp"><i class="fab fa-gulp"></i>
+					<h3>Gulp</h3>
+				</div>
+				<div class="icone-bower"><i class="bower"></i>
+					<h3>Bower</h3>
+				</div>
+				<div class="icone-github"><i class="fab fa-github"></i>
+					<h3>GitHub</h3>
+				</div>
+				<div class="icone-photoshop"><i class="icon-adb-photoshop"></i>
+					<h3>Photoshop</h3>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cms box">
+			<h1>Cms</h1>
+			<span class="line"></span>
+			<div class="icon-habilidades">
+				<div class="icone-wordpress"><i class="fab fa-wordpress"></i>
+					<h3>Wordpress</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- section portfolio-->
+<section class="portfolio screen" id="portfolio" data-an="top" >
+	<div class="chamada_section"><span class=""></span><span class="sp-center">Portfólio</span><span class=""></span></div>
+
+	<div class="container">
+		<h1 class="descricao">Meus <strong>Jobs</strong> mais recentes</h1>
+		<div class="container-job">
+			<div class="print-job ">
+				<div class="info-job">
+					<img src="galeria/jobs/portfolio.PNG" class="img-responsive" alt="Job Portfólio">
+					<h1>Meu Portfólio</h1>
+					<h3>Website Design</h3>
+				</div>
+			</div>
+			<div class="print-job ">
+				<div class="info-job">
+					<img src="galeria/jobs/assine-live.PNG" class="img-responsive" alt="Job Portfólio">
+					<h1>Meu Portfólio</h1>
+					<h3>Website Design</h3>
+				</div>
+			</div>
+			<div class="print-job ">
+				<div class="info-job">
+					<img src="galeria/jobs/consulta-debito.PNG" class="img-responsive" alt="Job Portfólio">
+					<h1>Meu Portfólio</h1>
+					<h3>Website Design</h3>
+				</div>
+			</div>
+			<div class="print-job ">
+				<div class="info-job">
+					<img src="galeria/jobs/adt.PNG" class="img-responsive" alt="Job Portfólio">
+					<h1>Meu Portfólio</h1>
+					<h3>Website Design</h3>
+				</div>
+			</div>
+			<div class="print-job ">
+				<div class="info-job">
+					<img src="galeria/jobs/porto-seguro.PNG" class="img-responsive" alt="Job Portfólio">
+					<h1>Meu Portfólio</h1>
+					<h3>Website Design</h3>
+				</div>
+			</div>
+			<div class="print-job ">
+				<div class="info-job">
+					<img src="galeria/jobs/localize.PNG" class="img-responsive" alt="Job Portfólio">
+					<h1>Meu Portfólio</h1>
+					<h3>Website Design</h3>
+				</div>
 			</div>
 
-			<div class="form">
-				<form>
-					
+		</div>
+	</div>
+</section>
 
-					<div class="campo">
+<!-- section contato-->
+<section class="contato screen" id="contato" data-an="top">
+	<div class="chamada_section"><span class=""></span><span class="sp-center">Contato</span><span class=""></span></div>
+
+	<div class="container">
+		<h1 class="descricao"><strong>Contacte</strong>-me</h1>
+		<div class="texto-contato">
+			<p class="p1">Sinta-se a vontade para entrar em contato comigo, se gostou do meu trabalho ou se tiver algum projeto em que eu possa colaborar.</p>
+			<p class="p2">Mande um e-mail para <a href="#">leandro.dasilvati7@gmail.com</a> preenchendo o formulário a baixo...</p>
+		</div>
+
+		<div class="form">
+			<form>
+
+
+				<div class="campo">
 						<span class="icones">
 						<i class="fas fa-user"></i>
 						</span>
-						<input type="text" placeholder="Informe seu nome" name="nome" >
-					</div>
-					
-					<div class="botoes">
-						<button class="next btn">
+					<input type="text" placeholder="Informe seu nome" name="nome" >
+				</div>
+
+				<div class="botoes">
+					<button class="next btn">
 						<div class="icones">
 							<i class="fas fa-fast-forward"></i>
 							Próximo
@@ -281,61 +281,63 @@
 						</div>
 					</button>
 
-					</div>
+				</div>
 
-					
-				</form>
-			</div>
+
+			</form>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<footer>
-			<div class=""></div>
+<footer>
+	<div class="container-footer">
+		<div class="down"></div>
+	</div>
 
-			<ul class="social">
-				<li class="icone-facebook">
-					<a href="#">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-				</li>
-				
-				<li class="icone-github">
-					<a href="#">
-						<i class="fab fa-github-alt"></i>
-					</a>
-				</li>
-				
-				<li class="icone-linkedin">
-					<a href="#">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</li>
-			</ul>
+	<ul class="social">
+		<li class="icone-facebook">
+			<a href="#">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</li>
 
-			<h1>Leandro Souza <span>2018</span> <i class="fas fa-copyright"></i></h1>
-		
-	</footer>
+		<li class="icone-github">
+			<a href="#">
+				<i class="fab fa-github-alt"></i>
+			</a>
+		</li>
 
-	<!-- Animações do site-->
-	<script>
-		$(function(){
-			$('.toogle').click(function(){
-				$('.toogle').toggleClass('ativo');
-				$('.menu-responsivo').toggleClass('clk');
-				$('.chamada').toggleClass('down');
-			});
-		});//Função ativa o menu responsivo
+		<li class="icone-linkedin">
+			<a href="#">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+		</li>
+	</ul>
 
-		$(function(){
-			$('section, footer, .chamada').click(function(){
-				if($('.toogle.ativo') && $('.menu-responsivo.clk')){
-					$('.toogle').removeClass('ativo');
-					$('.menu-responsivo').removeClass('clk');
-				}
-			});
-		});//Função fecha menu com click em qualquer parte do site
+	<h1>Leandro Souza <span>2018</span> <i class="fas fa-copyright"></i></h1>
 
-		$(window).scroll(function() {
+</footer>
+
+<!-- Animações do site-->
+<script>
+    $(function(){
+        $('.toogle').click(function(){
+            $('.toogle').toggleClass('ativo');
+            $('.menu-responsivo').toggleClass('clk');
+            $('.chamada').toggleClass('down');
+        });
+    });//Função ativa o menu responsivo
+
+    $(function(){
+        $('section, footer, .chamada, .menu-responsivo > ul > li > a').click(function(){
+            if($('.toogle.ativo') && $('.menu-responsivo.clk')){
+                $('.toogle').removeClass('ativo');
+                $('.menu-responsivo').removeClass('clk');
+            }
+        });
+    });//Função fecha menu com click em qualquer parte do site
+
+    $(window).scroll(function() {
 
         //Altura atual do scroll
         var tamScroll = $(this).scrollTop();
@@ -366,8 +368,8 @@
         }
 
     });
-		
-	</script>
+
+</script>
 
 
 </body>
