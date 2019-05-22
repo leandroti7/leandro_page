@@ -11,7 +11,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 16px; }
   body strong {
     font-weight: 700; }
 
@@ -79,8 +80,8 @@ section.sobre {
       padding-left: 15px;
       padding-right: 15px;
       color: #969696;
-      font-size: 20px;
-      font-size: 1.25rem;
+      font-size: 16px;
+      font-size: 1rem;
       z-index: 1; }
       @media (min-width: 768px) {
         section.sobre .itens [class^="topicos-"] {
@@ -158,8 +159,8 @@ section.sobre {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 20px;
-    font-size: 1.25rem; }
+    font-size: 16px;
+    font-size: 1rem; }
     @media (min-width: 768px) {
       section.sobre .textos {
         float: left;
@@ -201,6 +202,8 @@ section.sobre {
 
 section.habilidades {
   padding-bottom: 50px; }
+  section.habilidades .html h1, section.habilidades .css h1 {
+    text-transform: uppercase; }
   section.habilidades h1 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -241,28 +244,37 @@ section.habilidades {
         color: #393df5; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-sass {
         color: #c50cd1; }
-      section.habilidades .icon-habilidades [class^="icone-"].icone-bootstrap {
-        color: #670798; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-bootstrap img {
+        width: 85px; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-js {
         color: #d3a60a; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-jquery img {
+        width: 85px; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-node {
         color: #72ba72; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-gulp {
         color: #fb0320; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-bower {
-        color: #f48d08; }
+        position: relative;
+        width: 100px; }
+        section.habilidades .icon-habilidades [class^="icone-"].icone-bower img {
+          width: 100px; }
+          @media (max-width: 767px) {
+            section.habilidades .icon-habilidades [class^="icone-"].icone-bower img {
+              margin-left: -15px; } }
       section.habilidades .icon-habilidades [class^="icone-"].icone-github {
         color: #000; }
-      section.habilidades .icon-habilidades [class^="icone-"].icone-photoshop {
-        color: #1820bb; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-photoshop img {
+        width: 85px; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-wordpress {
         color: rgba(0, 0, 0, 0.7); }
       section.habilidades .icon-habilidades [class^="icone-"] h3 {
         color: #000;
         font-size: 18px;
         font-size: 1.125rem;
-        text-transform: uppercase;
-        margin-top: 20px; }
+        text-transform: normal;
+        margin-top: 20px;
+        font-family: 'Open Sans', sans-serif; }
 
 section.portfolio {
   background-color: #f5f5f5;

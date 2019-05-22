@@ -1,5 +1,8 @@
 section.habilidades
 		padding-bottom: 50px
+		.html, .css
+			h1
+				text-transform: uppercase
 		h1
 			+make-sm-column-offset(0.5)
 			+font-size(30px)
@@ -38,19 +41,30 @@ section.habilidades
 				&.icone-sass
 						color: $rosa_sass
 				&.icone-bootstrap
-						color: $roxo_bootstrap
+					img
+						width: 85px
 				&.icone-js
 						color: $amarelo_js
+				&.icone-jquery
+					img
+						width: 85px
 				&.icone-node
 						color: $verde_node
 				&.icone-gulp
 						color: $vermelho_gulp
 				&.icone-bower
-						color: $laranja
+					position: relative
+					width: 100px
+					img
+						width: 100px
+						+breakpoint($celular)
+							margin-left: -15px
 				&.icone-github
 						color: #000
 				&.icone-photoshop
-						color: $azul-ps
+					img
+						width: 85px
+				&.icone-github
 				&.icone-wordpress
 						color: $bg_cinza
 
@@ -58,8 +72,10 @@ section.habilidades
 				h3
 					color: #000
 					+font-size(18px)
-					text-transform: uppercase
+					text-transform: normal
 					margin-top: 20px
 					//background: $azul-claro
+					font-family: 'Open Sans', sans-serif
+
 
 
