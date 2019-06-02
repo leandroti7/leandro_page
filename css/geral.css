@@ -220,7 +220,7 @@ section.habilidades {
     @media (min-width: 768px) {
       section.habilidades .icon-habilidades {
         float: left;
-        width: 83.33333%; } }
+        width: 91.66667%; } }
     @media (min-width: 768px) {
       section.habilidades .icon-habilidades {
         margin-left: 4.16667%; } }
@@ -232,8 +232,8 @@ section.habilidades {
       margin: 0 40px 25px 0;
       padding: 0 10px;
       text-align: center;
-      font-size: 100px;
-      font-size: 6.25rem; }
+      font-size: 90px;
+      font-size: 5.625rem; }
       @media (max-width: 767px) {
         section.habilidades .icon-habilidades [class^="icone-"] {
           font-size: 75px;
@@ -244,8 +244,8 @@ section.habilidades {
         color: #393df5; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-sass {
         color: #c50cd1; }
-      section.habilidades .icon-habilidades [class^="icone-"].icone-bootstrap img {
-        width: 85px; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-bootstrap {
+        color: #6a087b; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-js {
         color: #d3a60a; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-jquery img {
@@ -266,8 +266,10 @@ section.habilidades {
         color: #000; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-photoshop img {
         width: 85px; }
-      section.habilidades .icon-habilidades [class^="icone-"].icone-wordpress {
-        color: rgba(0, 0, 0, 0.7); }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-github {
+        color: black; }
+      section.habilidades .icon-habilidades [class^="icone-"].icone-laravel {
+        color: #ff5a5b; }
       section.habilidades .icon-habilidades [class^="icone-"] h3 {
         color: #000;
         font-size: 18px;
