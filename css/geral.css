@@ -298,55 +298,58 @@ section.portfolio {
       section.portfolio .container-job {
         float: left;
         width: 100%; } }
-    section.portfolio .container-job .print-job {
-      position: relative;
-      float: left;
-      width: 33.33333%;
-      min-height: 1px;
-      padding-right: 15px;
-      padding-left: 15px;
-      padding: 10px; }
-      section.portfolio .container-job .print-job .info-job {
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        padding: 10px 15px 10px;
-        background: white;
-        box-shadow: 1px 1px 4px -1px #b7b7b7;
-        -webkit-transition: 0.8s;
-        -o-transition: 0.8s;
-        transition: 0.8s; }
-        section.portfolio .container-job .print-job .info-job:hover {
-          box-shadow: 1px 0px 10px 4px #b7b7b7;
+    section.portfolio .container-job a {
+      text-decoration: none;
+      color: #333333; }
+      section.portfolio .container-job a .print-job {
+        position: relative;
+        float: left;
+        width: 33.33333%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding: 10px; }
+        section.portfolio .container-job a .print-job .info-job {
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          border-radius: 3px;
+          padding: 10px 15px 10px;
+          background: white;
+          box-shadow: 1px 1px 4px -1px #b7b7b7;
           -webkit-transition: 0.8s;
           -o-transition: 0.8s;
           transition: 0.8s; }
-        section.portfolio .container-job .print-job .info-job h1 {
-          font-size: 18px;
-          font-size: 1.125rem;
-          margin: 10px 0;
-          letter-spacing: 2px; }
-        section.portfolio .container-job .print-job .info-job h3 {
-          font-size: 16px;
-          font-size: 1rem;
-          margin-bottom: 25px; }
-    @media (max-width: 991px) {
-      section.portfolio .container-job .print-job {
-        position: relative;
-        float: left;
-        width: 50%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (max-width: 474px) {
-      section.portfolio .container-job .print-job {
-        position: relative;
-        float: left;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px; } }
+          section.portfolio .container-job a .print-job .info-job:hover {
+            box-shadow: 1px 0px 10px 4px #b7b7b7;
+            -webkit-transition: 0.8s;
+            -o-transition: 0.8s;
+            transition: 0.8s; }
+          section.portfolio .container-job a .print-job .info-job h1 {
+            font-size: 18px;
+            font-size: 1.125rem;
+            margin: 10px 0;
+            letter-spacing: 2px; }
+          section.portfolio .container-job a .print-job .info-job h3 {
+            font-size: 16px;
+            font-size: 1rem;
+            margin-bottom: 25px; }
+        @media (max-width: 991px) {
+          section.portfolio .container-job a .print-job .print-job {
+            position: relative;
+            float: left;
+            width: 50%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px; } }
+        @media (max-width: 474px) {
+          section.portfolio .container-job a .print-job .print-job {
+            position: relative;
+            float: left;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px; } }
   section.portfolio .print-hover {
     position: relative;
     float: left;
@@ -596,6 +599,10 @@ footer {
           font-size: 1.4375rem;
           color: white;
           margin-top: 15px; }
+        footer .social a li:hover,
+        footer h1 a li:hover {
+          transition: background-color .4s ease-in-out;
+          background-color: rgba(100, 100, 100, 0.3); }
   footer h1 {
     margin-top: 30px;
     font-size: 20px;

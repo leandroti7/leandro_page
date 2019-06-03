@@ -14,40 +14,43 @@ section.portfolio
 		+make-sm-column(12)
 		//background-color: #0a7f6d
 
-		.print-job
-			+make-xs-column(4)
-			padding: 10px
-			//border: 1px solid #000035
-			//background: #00c000
+		a
+			text-decoration: none
+			color: #333333
+			.print-job
+				+make-xs-column(4)
+				padding: 10px
+				//border: 1px solid #000035
+				//background: #00c000
 
 
-			.info-job
-				+border-radius(3px)
-				padding: 10px 15px 10px
-				background: $branco
-				box-shadow: 1px 1px 4px -1px #b7b7b7
-				+transition(0.8s)
-
-				&:hover
-					box-shadow: 1px 0px 10px 4px #b7b7b7
+				.info-job
+					+border-radius(3px)
+					padding: 10px 15px 10px
+					background: $branco
+					box-shadow: 1px 1px 4px -1px #b7b7b7
 					+transition(0.8s)
 
-				h1
-					+font-size(18px)
-					margin: 10px 0
-					letter-spacing: 2px
+					&:hover
+						box-shadow: 1px 0px 10px 4px #b7b7b7
+						+transition(0.8s)
 
-				h3
-					+font-size(16px)
-					margin-bottom: 25px
+					h1
+						+font-size(18px)
+						margin: 10px 0
+						letter-spacing: 2px
 
-		.print-job
-			+breakpoint($tablet)
-				+make-xs-column(6)
+					h3
+						+font-size(16px)
+						margin-bottom: 25px
 
-		.print-job
-			+breakpoint($sm_celular)
-				+make-xs-column(12)
+				.print-job
+					+breakpoint($tablet)
+						+make-xs-column(6)
+
+				.print-job
+					+breakpoint($sm_celular)
+						+make-xs-column(12)
 
 
 
