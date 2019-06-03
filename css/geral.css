@@ -8,6 +8,7 @@
 /* ======== Outros */
 /* ======== Background Color Opacity */
 /* ======== Columns */
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
@@ -303,12 +304,14 @@ section.portfolio {
       color: #333333; }
       section.portfolio .container-job a .print-job {
         position: relative;
-        float: left;
-        width: 33.33333%;
         min-height: 1px;
         padding-right: 15px;
         padding-left: 15px;
         padding: 10px; }
+        @media (min-width: 768px) {
+          section.portfolio .container-job a .print-job {
+            float: left;
+            width: 33.33333%; } }
         section.portfolio .container-job a .print-job .info-job {
           -webkit-border-radius: 3px;
           -moz-border-radius: 3px;
@@ -334,22 +337,22 @@ section.portfolio {
             font-size: 16px;
             font-size: 1rem;
             margin-bottom: 25px; }
-        @media (max-width: 991px) {
-          section.portfolio .container-job a .print-job .print-job {
-            position: relative;
-            float: left;
-            width: 50%;
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px; } }
-        @media (max-width: 474px) {
-          section.portfolio .container-job a .print-job .print-job {
-            position: relative;
-            float: left;
-            width: 100%;
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px; } }
+      @media (max-width: 991px) {
+        section.portfolio .container-job a .print-job {
+          position: relative;
+          float: left;
+          width: 50%;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (max-width: 474px) {
+        section.portfolio .container-job a .print-job {
+          position: relative;
+          float: left;
+          width: 100%;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
   section.portfolio .print-hover {
     position: relative;
     float: left;
@@ -451,7 +454,7 @@ section.contato {
 
 header {
   position: relative;
-  background-image: url("/galeria/fundo1.png");
+  background-image: url("https://i.imgur.com/3rgt7q2.png");
   background-repeat: no-repeat;
   background-attachament: fixed;
   background-size: cover;
@@ -530,15 +533,19 @@ header {
       border-radius: 50%;
       border: 10px solid white;
       margin-bottom: 1%;
-      width: 235px;
+      width: 225px;
       height: 235px;
       background-position: center; }
       header .chamada .my-foto:hover {
         border-color: rgba(200, 255, 255, 0.7); }
-    @media (max-width: 767px) {
-      header .chamada .my-foto {
-        width: 225px;
-        height: 225px; } }
+      @media (max-width: 767px) {
+        header .chamada .my-foto {
+          width: 225px;
+          height: 225px; } }
+      @media (max-width: 425px) {
+        header .chamada .my-foto {
+          width: 190px;
+          height: 195px; } }
     header .chamada h3 {
       font-weight: 400;
       font-size: 22px;

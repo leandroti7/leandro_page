@@ -18,7 +18,7 @@ section.portfolio
 			text-decoration: none
 			color: #333333
 			.print-job
-				+make-xs-column(4)
+				+make-sm-column(4)
 				padding: 10px
 				//border: 1px solid #000035
 				//background: #00c000
@@ -44,13 +44,13 @@ section.portfolio
 						+font-size(16px)
 						margin-bottom: 25px
 
-				.print-job
-					+breakpoint($tablet)
-						+make-xs-column(6)
+			.print-job
+				+breakpoint($tablet)
+					+make-xs-column(6)
 
-				.print-job
-					+breakpoint($sm_celular)
-						+make-xs-column(12)
+			.print-job
+				+breakpoint($sm_celular)
+					+make-xs-column(12)
 
 
 
