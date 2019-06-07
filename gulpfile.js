@@ -5,15 +5,15 @@ var destOrigin = 'sass/**/*.sass';
 var destSaida =  'css';
 
 
-gulp.task('sass', function(){
+gulp.task('sass', gulp.series( function(){
     return gulp.src(destOrigin)
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(destSaida));
-});
+}));
 
-gulp.task('watch',function(){
-    gulp.watch(destOrigin, ['sass']);
+gulp.task('watch', gulp.series( function(){
+    gulp.watch(destOrigin, gulp.parallel( ['sass'] ));
 
-});
+}));
 
-gulp.task('default',['sass','watch']);
+gulp.task('default', gulp.series( ['sass','watch'] ));
