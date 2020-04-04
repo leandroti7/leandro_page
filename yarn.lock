@@ -1213,7 +1213,7 @@ globule@^1.0.0:
   integrity sha512-g7QtgWF4uYSL5/dn71WxubOrS7JVGCnFPEnoeChJmBnyR9Mw8nGoEwOgJL/RC2Te0WhbsEUCejfH8SZNJ+adYQ==
   dependencies:
     glob "~7.1.1"
-    lodash "~4.17.10"
+    lodash "~4.17.15"
     minimatch "~3.0.2"
 
 glogg@^1.0.0:
