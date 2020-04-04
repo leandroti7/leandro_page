@@ -18,6 +18,7 @@
   "homepage": "https://github.com/leandroti7/leandro_page#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.1",
     "gulp-watch": "^5.0.1"
   },
@@ -25,7 +26,6 @@
     "bootstrap": "4.3.1",
     "bootstrap-sass": "^3.4.1",
     "breakpoint-sass": "^2.7.1",
-    "gulp": "^4.0.2",
     "kind-of": "^6.0.3",
     "live-server": "^1.2.1",
     "lodash": "^4.17.15",
