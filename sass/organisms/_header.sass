@@ -1,16 +1,17 @@
 header
 	+clearfix
 	position: relative
-	
-
 	background:
-		image: url("https://i.imgur.com/3rgt7q2.png")
+		image: url("../../galeria/fundo3.jpg")
 		repeat: no-repeat
 		attachament: fixed
 		size: cover
 		color: rgba(255,255,25,.70)
-	//background-color: rgba(200,255,255,.90)
-	
+		-webkit-filter: blur(5px)
+		filter: blur(5px)
+		-moz-filter: blur(5px)
+		-o-filter: blur(5px)
+		-ms-filter: blur(5px)
 	.barra-header
 		width: 100%
 		position: relative
@@ -31,7 +32,6 @@ header
 					color: $laranja
 
 			a
-				//background: $bg_ligth_cinza
 				color: $azul-claro
 				display: block
 				float: left
@@ -50,7 +50,6 @@ header
 		.menu
 			float: right
 			margin: 15px 5px
-			//background-color: #fff
 			ul
 				display: inline-flex
 				
