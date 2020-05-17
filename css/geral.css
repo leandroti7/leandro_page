@@ -226,7 +226,13 @@ section.habilidades {
         margin-left: 4.16667%; } }
     @media (max-width: 767px) {
       section.habilidades .icon-habilidades {
-        margin: 0; } }
+        margin: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column; } }
     section.habilidades .icon-habilidades [class^="icone-"] {
       display: inline-block;
       margin: 0 40px 25px 0;
@@ -255,8 +261,7 @@ section.habilidades {
       section.habilidades .icon-habilidades [class^="icone-"].icone-gulp {
         color: #fb0320; }
       section.habilidades .icon-habilidades [class^="icone-"].icone-bower {
-        position: relative;
-        width: 100px; }
+        position: relative; }
         section.habilidades .icon-habilidades [class^="icone-"].icone-bower img {
           width: 100px; }
           @media (max-width: 767px) {
@@ -452,25 +457,31 @@ section.contato {
             width: 80%; } }
 
 header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
   position: relative;
+  height: 100vh;
   background-image: url("../../galeria/fundo3.jpg");
   background-repeat: no-repeat;
   background-attachament: fixed;
   background-size: cover;
   background-color: rgba(255, 255, 25, 0.7);
-  background--webkit-filter: blur(5px);
-  background-filter: blur(5px);
-  background--moz-filter: blur(5px);
-  background--o-filter: blur(5px);
-  background--ms-filter: blur(5px); }
+  background--webkit-filter: blur(0px);
+  background-position-x: 100%; }
   header:before, header:after {
     display: table;
     content: " "; }
   header:after {
     clear: both; }
+  @media (max-width: 1024px) {
+    header {
+      background-position-x: 0%; } }
   header .barra-header {
     width: 100%;
-    position: relative;
     box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.3);
     background: #1b242f;
     position: fixed;
@@ -523,12 +534,10 @@ header {
   header .chamada {
     text-align: center;
     color: #072c61;
-    margin: 100px 0; }
-    header .chamada.down {
-      margin-top: 250px;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     header .chamada .my-foto {
       clear: both;
       -webkit-border-radius: 50%;
@@ -629,7 +638,6 @@ footer {
       font-size: 0.9375rem; }
 
 .menu-responsivo {
-  position: absolute;
   text-align: center;
   width: 100%;
   margin-top: -150px;

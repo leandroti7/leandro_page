@@ -1,20 +1,23 @@
 header
 	+clearfix
+	+flexbox
+	justify-content: center
 	position: relative
+	height: 100vh
 	background:
 		image: url("../../galeria/fundo3.jpg")
 		repeat: no-repeat
 		attachament: fixed
 		size: cover
 		color: rgba(255,255,25,.70)
-		-webkit-filter: blur(5px)
-		filter: blur(5px)
-		-moz-filter: blur(5px)
-		-o-filter: blur(5px)
-		-ms-filter: blur(5px)
+		-webkit-filter: blur(0px)
+		position-x: 100%
+
+	+breakpoint($sm_desktop)
+		background: 
+			position-x: 0% 
 	.barra-header
 		width: 100%
-		position: relative
 		box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.3)
 		background: $bg_footer
 		position: fixed
@@ -44,8 +47,6 @@ header
 			
 				+breakpoint($celular)
 					+font-size(20px)
-
-
 
 		.menu
 			float: right
@@ -77,10 +78,13 @@ header
 		text-align: center
 		color: $azul-escuro	
 		margin: 100px 0
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 
-		&.down
-			margin-top: 250px
-			+transition(.5s)
+		// &.down
+		// 	margin-top: 250px
+		// 	+transition(.5s)
 
 
 		.my-foto
@@ -114,8 +118,6 @@ header
 			+breakpoint($celular)
 				+font-size(20px)
 				margin-bottom: 30%
-
-
 
 		p
 			+font-size(45px)
