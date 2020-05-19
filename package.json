@@ -1,0 +1,28 @@
+{
+  "name": "leandro_page",
+  "version": "1.0.0",
+  "description": "Este é meu portfólio contendo alguns dos meus Porjetos com desenvolvedor front-end.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-sass": "^3.4.1",
+    "breakpoint-sass": "^2.7.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandroti7/leandro_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandroti7/leandro_page/issues"
+  },
+  "homepage": "https://github.com/leandroti7/leandro_page#readme"
+}
