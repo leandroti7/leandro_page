@@ -37,12 +37,41 @@ section.contato
 		.botoes	
 			+make-sm-column(12)
 			//border: 1px solid #000
-			margin: 15px auto
+			margin: 25px auto
 			input[type="text"]
 				border-color: $cinza-escuro
 				border-width: 0px 0px 1px 0px
 				width: 40%
 				margin-left: 10px
+				outline: none
 				+breakpoint($tablet)
 					margin-bottom: 10px
 					width: 80%
+		.campo
+			display: flex
+			flex-direction: column
+			min-height: 30px
+			height: auto
+			[class^="content-email"],
+			[class^="content-msg"],
+			[class^="content-name"]
+				.msg-error
+					display: none
+					color: red
+					font-size: 11px
+					margin-left: 25px
+					top: -0.2em
+					height: 5px
+					&.on
+						display: block
+			[class^="content-"]
+				width: 100%
+				position: absolute
+				top: 0
+				&.off
+					display: none
+			[class^="content-email"],
+			[class^="content-msg"]
+				display: none
+				&.on
+					display: block

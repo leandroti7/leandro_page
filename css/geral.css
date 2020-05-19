@@ -102,9 +102,7 @@ section.sobre {
       width: 50%; } }
     @media (max-width: 474px) {
       section.sobre .itens [class^="topicos-"] {
-        padding-bottom: 15px; }
-        section.sobre .itens [class^="topicos-"]:hover {
-          box-shadow: 2px 3px 10px 2px; } }
+        padding-bottom: 15px; } }
     section.sobre .itens [class^="topicos-"] h1 {
       color: #86797a;
       font-size: 20pt;
@@ -438,7 +436,7 @@ section.contato {
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px;
-      margin: 15px auto; }
+      margin: 25px auto; }
       @media (min-width: 768px) {
         section.contato .form .campo,
         section.contato .form .botoes {
@@ -449,12 +447,43 @@ section.contato {
         border-color: #969696;
         border-width: 0px 0px 1px 0px;
         width: 40%;
-        margin-left: 10px; }
+        margin-left: 10px;
+        outline: none; }
         @media (max-width: 991px) {
           section.contato .form .campo input[type="text"],
           section.contato .form .botoes input[type="text"] {
             margin-bottom: 10px;
             width: 80%; } }
+    section.contato .form .campo {
+      display: flex;
+      flex-direction: column;
+      min-height: 30px;
+      height: auto; }
+      section.contato .form .campo [class^="content-email"] .msg-error,
+      section.contato .form .campo [class^="content-msg"] .msg-error,
+      section.contato .form .campo [class^="content-name"] .msg-error {
+        display: none;
+        color: red;
+        font-size: 11px;
+        margin-left: 25px;
+        top: -0.2em;
+        height: 5px; }
+        section.contato .form .campo [class^="content-email"] .msg-error.on,
+        section.contato .form .campo [class^="content-msg"] .msg-error.on,
+        section.contato .form .campo [class^="content-name"] .msg-error.on {
+          display: block; }
+      section.contato .form .campo [class^="content-"] {
+        width: 100%;
+        position: absolute;
+        top: 0; }
+        section.contato .form .campo [class^="content-"].off {
+          display: none; }
+      section.contato .form .campo [class^="content-email"],
+      section.contato .form .campo [class^="content-msg"] {
+        display: none; }
+        section.contato .form .campo [class^="content-email"].on,
+        section.contato .form .campo [class^="content-msg"].on {
+          display: block; }
 
 header {
   display: -webkit-box;

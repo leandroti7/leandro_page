@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
 <header>
 	<div class="barra-header">
 		<div class="logo">
@@ -49,6 +50,7 @@
 		</div>
 	</div>
 </header>
+
 <!-- section sobre-->
 <section class="sobre screen" id="sobre1"  data-anime="top">
 	<div class="chamada_section">
@@ -111,6 +113,7 @@
 		</div>
 	</div>
 </section>
+
 <!-- section habilidades-->
 <section class="habilidades screen" id="habilidades" data-an="top" >
 	<div class="chamada_section"><span class=""></span><span class="sp-center">Habilidades</span><span class=""></span></div>
@@ -164,9 +167,6 @@
 				<div class="icone-gulp"><i class="fab fa-gulp"></i>
 					<h3>Gulp</h3>
 				</div>
-				<div class="icone-bower"><img src="galeria/icon_bower.png">
-					<h3>Bower</h3>
-				</div>
 				<div class="icone-github"><i class="fab fa-github"></i>
 					<h3>GitHub</h3>
 				</div>
@@ -191,10 +191,14 @@
 				<div class="icone-php"><i class="fab fa-php"></i>
 					<h3>Php</h3>
 				</div>
+				<div class="icone-php"><i class="fab fa-wordpress"></i>
+					<h3>Word Press</h3>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 <!-- section portfolio-->
 <section class="portfolio screen" id="portfolio" data-an="top" >
 	<div class="chamada_section"><span class=""></span><span class="sp-center">Portfólio</span><span class=""></span></div>
@@ -204,7 +208,7 @@
 			<a class="direct-job" href="#">
 				<div class="print-job ">
 					<div class="info-job">
-						<img src="galeria/jobs/portfolio.PNG" class="img-responsive" alt="Job Portfólio">
+						<img src="galeria/jobs/portfolio.png" class="img-responsive" alt="Job Portfólio">
 						<h1>Meu Portfólio</h1>
 						<h3>Website Design</h3>
 					</div>
@@ -233,21 +237,34 @@
 			<p class="p2">Mande um e-mail para <a href="#">leandro.dasilvati7@gmail.com</a> preenchendo o formulário a baixo...</p>
 		</div>
 		<div class="form">
-			<form>
+			<form action="#">
 				<div class="campo">
+					<div class="content-name">
 						<span class="icones">
 						<i class="fas fa-user"></i>
 						</span>
-					<input type="text" placeholder="Informe seu nome" name="nome" >
+						<input type="text" id="nome" placeholder="Informe seu nome" name="name" >
+						<sup class="msg-error">Preencha este campo</sup>
+					</div>
+					<div class="content-email">
+						<span class="icones">
+						<i class="far fa-envelope"></i>
+						</span>
+						<input type="text" id="email" placeholder="Informe seu email" name="email" >
+						<sup class="msg-error">Preencha este campo</sup>
+					</div>
+					<div class="content-msg">
+						<textarea type="text" placeholder="Digite sua mensagem..." name="msg" ></textarea>
+					</div>
 				</div>
 				<div class="botoes">
-					<button class="next btn">
+					<button class="next btn" type="button">
 						<div class="icones">
 							<i class="fas fa-fast-forward"></i>
 							Próximo
 						</div>
 					</button>
-					<button class="send btn">
+					<button class="send btn" disabled>
 						<div class="icones">
 							<i class="fas fa-play"></i>
 							Enviar
@@ -337,8 +354,32 @@
 
     });
 
-</script>
+	$(function(){
+		$('.next').attr('data-button',"next").click(function(){
+			console.log('primeiro');
+			if($('#nome').val() != ""){
+				$('.content-name').addClass('off');
+				$('.content-email').addClass('on');
+				$('.msg-error').removeClass('on');
+				// $(this).attr('data-button', "email");
+			}else{
+				$('.msg-error').addClass('on');
+			}
+		});
+	});
+	$(function(){
+		$('button').attr('data-button',"email").click(function(){
+			console.log('segundo');
+			if($('#email').val() != ""){
+				$('.content-email').addClass('off');
+			}else{
+				$('.msg-error').addClass('on');
+				
+			}
+		});
+	})
 
+</script>
 
 </body>
 </html>
