@@ -410,6 +410,7 @@ section.contato {
         color: #0072bc;
         text-decoration: underline; }
   section.contato .form {
+    display: none;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
